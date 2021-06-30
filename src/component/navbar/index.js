@@ -40,10 +40,9 @@ export const NavigationBar = () => {
   );
 };
 export const WrapperNavigationBar = styled.div`
-  ;
   .headNavbar {
     justify-content: space-between;
-    padding: 0 70px
+    padding: 0 70px;
   }
   .socialIcons {
     display: flex;
