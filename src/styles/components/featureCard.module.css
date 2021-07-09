@@ -1,0 +1,151 @@
+.feature {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.property_wrap {
+  padding: 60px 0;
+}
+.property_box {
+  background: #fff;
+  padding: 18px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.propertyImg {
+  overflow: hidden;
+}
+.propertyImgInner {
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.property_box h3 {
+  margin-top: 10px;
+  line-height: 24px;
+  min-height: 52px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #000;
+  font-weight: normal;
+}
+
+.property_box h3:hover {
+  color: #ffb900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.property_location i {
+  padding-right: 6px;
+  font-size: 14px;
+  color: #b7b7b7;
+}
+.property_location {
+  font-size: 14px;
+  color: #b9b9b9;
+}
+.heart_info {
+  display: flex;
+  margin-top: 15px;
+}
+.heart_icon {
+  margin-right: 5px;
+}
+.heart_icon a {
+  font-size: 14px;
+  color: #a5a5a5;
+  width: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #f0efef;
+  background: #f9f9f9;
+}
+.property_price {
+  font-size: 20px;
+  color: #ffb900;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.propert_info {
+  text-align: center;
+  margin-top: 15px;
+  /* border: 1px solid #efefef; */
+
+  padding: 7px;
+}
+.outer {
+  list-style: none;
+  border: 1px solid #efefef;
+  padding: 7px;
+}
+.propert_info h5 {
+  font-size: 12px;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  margin-top: 5px;
+}
+.inner {
+  position: relative;
+  list-style: none;
+}
+.inner:before {
+  content: "";
+  background: #efefef;
+  width: 1px;
+  height: 58px;
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
+.inner:first-child:before {
+  display: none;
+}
+.property_box:hover .propertyImg img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.property_box {
+  margin-top: 30px;
+}
+.rent_info {
+  display: flex;
+  margin-top: 15px;
+}
+.apart {
+  background: #ffb900;
+  z-index: 1000;
+  position: relative;
+  padding: 10px 18px;
+  width: 55%;
+  color: #000;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.apart:after {
+  content: "";
+  background: #ffb900;
+  z-index: -1;
+  width: 40px;
+  height: 100%;
+  transform: skew(-30deg);
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+.sale {
+  background: #2b2727;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  width: 45%;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}

@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+.feature-card {
+  margin-top: 30px;
+  background-color: red;
+}
+.feature-card .card {
+  background: #fff;
+  padding: 18px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+  border: none;
+}
+.feature-card .card-body {
+  padding: 0;
+}

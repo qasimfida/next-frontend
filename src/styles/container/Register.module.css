@@ -1,0 +1,61 @@
+.innerHeading {
+  background: url(../../assets/innerHeading.jpg);
+  padding: 40px 0;
+  background-size: cover;
+  text-align: center;
+}
+.innerHeading h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.innerContent {
+  padding: 60px 0;
+}
+.loginWrp {
+  max-width: 400px;
+}
+.loginWrp:hover {
+  border-color: #ffb900;
+}
+
+.fbBtn {
+  background-color: #3b5999;
+  border-color: #3b5999;
+  border-radius: 0;
+  padding: 12px 0;
+}
+.gBtn {
+  background: #d54b3d;
+  border-color: #d54b3d;
+  border-radius: 0;
+  padding: 12px 0;
+}
+.fbBtn:hover {
+  background-color: #3b5999;
+  background-color: #3b5999;
+  text-decoration: none;
+}
+.gBtn:hover {
+  background: #ce4234;
+  border-color: #ce4234;
+  text-decoration: none;
+}
+.fbBtn:focus {
+  box-shadow: none;
+}
+.gBtn:focus {
+  box-shadow: none;
+}
+.login_btn {
+  background: #000;
+  border-color: #000;
+  border-radius: 0;
+  height: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.login_btn:hover {
+  background: #ffb900;
+  border-color: #ffb900;
+}

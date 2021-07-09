@@ -1,0 +1,145 @@
+.innerHeading {
+  background: url(../../assets/innerHeading.jpg);
+  padding: 40px 0;
+  background-size: cover;
+  text-align: center;
+}
+.innerHeading h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.innerContent {
+  padding: 60px 0;
+}
+.faqs {
+  margin-bottom: 30px;
+}
+.panel_heading {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.panel_heading h4 {
+  margin-bottom: 0;
+}
+.panel_heading h4 a {
+  padding: 15px 55px 15px 15px;
+  display: block;
+
+  font-size: 18px;
+  position: relative;
+}
+.panel_group h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.panel {
+  border-radius: 0;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+.panel_body {
+  line-height: 24px;
+  color: #555;
+  padding: 15px;
+  font-size: 14px;
+}
+.collapsed:hover,
+.collapsed h4 a:hover,
+.collapsed h4 a:active {
+  text-decoration: none;
+  background: #ffb900;
+  color: #fff;
+}
+.faqs h4 a:before {
+  content: "\f068";
+  background: #fff;
+  font-family: "FontAwesome";
+  width: 30px;
+  padding: 6px 0;
+  color: #ffb900;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  line-height: 18px;
+  border-radius: 50%;
+}
+.collapsed:before {
+  content: "\f067";
+  font-family: "FontAwesome";
+  background: #ffb900;
+  width: 30px;
+  padding: 6px 0;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  text-decoration: none;
+}
+.collapsed {
+  background: #fff;
+  color: #666;
+  text-decoration: none;
+}
+
+.collapsed:hover:before {
+  background: #fff;
+  color: #ffb900;
+}
+
+.loginWrp {
+  max-width: 400px;
+}
+.btn-facebook {
+  background-color: #3b5999;
+  border-radius: 0;
+  padding: 12px 0;
+}
+.login_btn {
+  background: #000;
+  border-color: #000;
+  border-radius: 0;
+}
+.login_btn:hover {
+  background: #ffb900;
+  border-color: #ffb900;
+}
+.forgot_text {
+  font-size: 14px;
+}
+.google_plus {
+  background: #d54b3d;
+  border-color: #d54b3d;
+  border-radius: 0;
+  padding: 12px 0;
+}
+.google_plus:hover {
+  background: #ce4234;
+  border-color: #ce4234;
+}
+.loginWrp .form-control {
+  height: 48px;
+  border-radius: 0;
+  font-size: 14px;
+}
+.loginWrp .login_btn {
+  height: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

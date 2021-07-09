@@ -1,25 +1,61 @@
-import React from "react";
-import styled from "styled-components";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React, { useState } from "react";
+import * as Icon from "react-feather";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  Col,
+  Container,
+  Nav,
+  Navbar,
+  NavDropdown,
+  Row,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
+
+import logo from "../../assets/logo.png";
+import styles from "../../styles/components/navbar.module.css";
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
 export const NavigationBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = () => {
+    setIsOpen((pre) => !pre);
+    console.log("click");
+  };
   return (
-    <WrapperNavigationBar>
-      <Navbar bg="light" expand="lg" className="headNavbar">
-        <div className="socialIcons">
-          <div>icon 1 </div>
-          <div>icon 2 </div>
-          <div>icon 3 </div>
-        </div>
-        <div>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Menu" id="basic-nav-dropdown">
+    <>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="none" onClick={handleClick} />
+          <Navbar className="d-none d-sm-none d-md-none d-lg-block">
+            <Nav className="ml-auto">
+              <NavDropdown
+                className={styles.dropdown}
+                title="Dropdown"
+                id="basic-nav-dropdown"
+              >
+                <ul class="submenu">
+                  <li>
+                    <a href="index.html">Home Image</a>
+                  </li>
+                  <li>
+                    <a href="index_slider.html">Home Slider</a>
+                  </li>
+                  <li>
+                    <a href="index_video.html">Home Video</a>
+                  </li>
+                  <li>
+                    <a href="index_map.html">Home Map</a>
+                  </li>
+                </ul>
+              </NavDropdown>
+              <NavDropdown
+                className={styles.dropdown}
+                title="Dropdown"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -32,21 +68,48 @@ export const NavigationBar = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
+
+              <NavDropdown
+                className={styles.dropdown}
+                title="Dropdown"
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">
+                  Something
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#link">Link</Nav.Link>
             </Nav>
-          </Navbar.Collapse>
-        </div>
+          </Navbar>
+        </Container>
       </Navbar>
-    </WrapperNavigationBar>
+      {isOpen && (
+        <div className={styles.menu}>
+          <div onClick={() => setIsOpen(false)}>close</div>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">
+              Another action
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">
+              Separated link
+            </NavDropdown.Item>
+          </NavDropdown>
+        </div>
+      )}
+    </>
   );
 };
-export const WrapperNavigationBar = styled.div`
-  .headNavbar {
-    justify-content: space-between;
-    padding: 0 70px;
-  }
-  .socialIcons {
-    display: flex;
-  }
-`;
-
 export default NavigationBar;

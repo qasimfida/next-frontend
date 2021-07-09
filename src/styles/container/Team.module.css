@@ -1,0 +1,13 @@
+.team_wrapper {
+  padding: 60px 0px 80px 0;
+  visibility: visible;
+  animation-name: fadeInUp;
+}
+.team_card {
+  padding-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .team_card {
+    padding-top: 20px;
+  }
+}
