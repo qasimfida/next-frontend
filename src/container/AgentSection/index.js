@@ -1,13 +1,28 @@
 import React from "react";
 import { Card, Button, Col, Row, Container, Pagination } from "react-bootstrap";
-import styles from "../../styles/components/agencies.module.css";
+import styles from "../../styles/container/Agents.module.css";
 
-import logo from "./../../assets/company01.jpg";
+import logo from "./../../assets/agent01.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import AgentCard from "../../component/agent-card";
 
 const data = [
+  {
+    agnecyName: "James Adult",
+    img: logo,
+    detail: "Lorem ipsum dolor",
+  },
+  {
+    agnecyName: "James Adult",
+    img: logo,
+    detail: "Lorem ipsum dolor",
+  },
+  {
+    agnecyName: "James Adult",
+    img: logo,
+    detail: "Lorem ipsum dolor",
+  },
   {
     agnecyName: "James Adult",
     img: logo,
@@ -45,7 +60,7 @@ export const AgentSection = () => {
     <>
       <div className={styles.innerHeading}>
         <Container>
-          <h1>Agencies</h1>
+          <h1>Agents</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>

@@ -57,7 +57,7 @@ export const TopBar = () => {
                 </a>
               </div>
               <div className={styles.topbar_login}>
-                <a href="submit_property.html"> Submit Property</a>
+                <a href="submit_property"> Submit Property</a>
               </div>
             </div>
           </Col>
