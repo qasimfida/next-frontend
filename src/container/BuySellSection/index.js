@@ -8,7 +8,6 @@ function BuySellSection() {
     <div className={styles.buy_wrap}>
       <Container class="container">
         <h1>Buy or sell your house</h1>
-
         <p>
           Donec placerat dolor id neque pretium placerat. Donec in facilisis
           risus. In sollicitudin magna luctus sem ultrices convallis. Sed quis

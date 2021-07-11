@@ -1,0 +1,108 @@
+.innerHeading {
+  background: url(../../assets/innerHeading.jpg);
+  padding: 40px 0;
+  background-size: cover;
+  text-align: center;
+}
+.innerHeading h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.innerContent {
+  padding: 60px 0;
+}
+.innerContent h3 {
+  font-size: 20px;
+  color: #ffb900;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.inputs input {
+  height: 52px;
+  font-size: 14px;
+  border-radius: 0;
+}
+.inputs textarea {
+  height: 200px !important;
+  font-size: 14px;
+  border-radius: 0;
+}
+.inputs select {
+  height: 52px;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.uploadphotobx {
+  border: 3px dashed #ddd;
+  background: #eee;
+  padding: 50px 30px;
+  text-align: center;
+}
+.uploadphotobx i {
+  font-size: 50px;
+  color: #999;
+  display: block;
+  margin-bottom: 15px;
+}
+.uploadphotobx h4 {
+  font-size: 30px;
+  color: #777;
+}
+.uploadphotobx p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.uploadphotobx label input[type="file"] {
+  cursor: inherit;
+  display: block;
+  font-size: 1px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  cursor: pointer;
+}
+.uploadphotobx label {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 20px 0 0 0;
+  overflow: hidden;
+  background: #555;
+  display: inline-block;
+  position: relative;
+}
+.uploadphotobx label:hover {
+  background: #1e90ff;
+  box-shadow: 0 0 10px #ccc;
+  color: #fff;
+}
+.sub {
+  margin-top: 10px !important;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 16px 36px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7ba0c5;
+  -webkit-box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+  background: #222f3c;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+}
+.sub:hover {
+  background: #7ba0c5;
+}
