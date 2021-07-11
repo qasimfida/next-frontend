@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as Icon from 'react-feather';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import {
   Col,
   Container,
@@ -122,14 +123,16 @@ export const NavigationBar = () => {
                   <div className="outer">
                     {item.items.map((option, i) => (
                       <NavDropdown.Item key={i + i + i} href="#action/3.1">
-                        {option.name}
+                        <Link href={option.link}>{option.name}</Link>
                       </NavDropdown.Item>
                     ))}
                   </div>
                 </NavDropdown>
               ))}
-              <div className="navbar_dropdown__1JObr nav-item dropdown">
-                <Nav.Link href="#link">Contact Us</Nav.Link>
+              <div className="navbar_dropdown__1JObr nav-item dropdown contact-link">
+                <Link className="hi" href="/contact">
+                  Contact Us
+                </Link>
               </div>
             </Nav>
           </Navbar>
@@ -151,14 +154,16 @@ export const NavigationBar = () => {
               <div className="outer">
                 {item.items.map((option, i) => (
                   <NavDropdown.Item key={i + i + i} href="#action/3.1">
-                    {option.name}
+                    <Link href={option.link}>{option.name}</Link>
                   </NavDropdown.Item>
                 ))}
               </div>
             </NavDropdown>
           ))}
-          <div className="navbar_dropdown__1JObr nav-item dropdown">
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+          <div className="navbar_dropdown__1JObr nav-item dropdown contact-link">
+            <Link className="hi" href="/contact">
+              Contact Us
+            </Link>
           </div>
         </div>
       )}

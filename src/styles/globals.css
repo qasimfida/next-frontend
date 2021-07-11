@@ -50,6 +50,17 @@ a {
 
 .nav-item {
   padding: 6px 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.contact-link:hover a {
+  color: #fff;
 }
 
 .nav-item:hover {
@@ -142,7 +153,59 @@ a {
   text-transform: capitalize;
 }
 
+.dropdown-menu .dropdown-item.active {
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
 .dropdown-menu .dropdown-item:hover {
   background: #ffb900;
   color: #fff !important;
+  text-transform: capitalize;
+}
+
+.dropdown-menu .dropdown-item:hover a {
+  color: #fff !important;
+}
+
+.dropdown-menu .dropdown-item.active:hover {
+  background: #ffb900;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+.dropdown-menu .dropdown-item a.active {
+  background-color: transparent;
+  text-transform: capitalize;
+  padding: 0;
+  font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item a:hover {
+  text-transform: capitalize;
+  padding: 0;
+  font-weight: 600;
+}
+
+.dropdown-menu .dropdown-item.active a:hover {
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  background: #eee;
+  width: 100%;
+  z-index: 99999999999999999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
