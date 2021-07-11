@@ -1,11 +1,10 @@
-import TopBar from "../component/topBar";
+import WithLayout from "../component/layout";
 import ContactSection from "../container/ContactSection";
 
 export default function Home() {
   return (
-    <>
-      <TopBar />
+    <WithLayout>
       <ContactSection />
-    </>
+    </WithLayout>
   );
 }

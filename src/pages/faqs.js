@@ -1,10 +1,11 @@
 import TopBar from "../component/topBar";
 import FaqsSection from "../container/FaqsSection";
 import Head from "next/head";
+import WithLayout from "../component/layout";
 
 export default function Home() {
   return (
-    <>
+    <WithLayout>
       <Head>
         <script
           src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -22,8 +23,7 @@ export default function Home() {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <TopBar />
       <FaqsSection />
-    </>
+    </WithLayout>
   );
 }

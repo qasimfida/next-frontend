@@ -1,10 +1,9 @@
 import React from "react";
-import { Card, Button, Col, Row, Container, Pagination } from "react-bootstrap";
+import { Card, Button, Col, Row, Container } from "react-bootstrap";
 import styles from "../../styles/container/ArticlesList.module.css";
 import logo from "./../../assets/blog01.jpg";
 import ArticleListCard from "../../component/articleListCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Pagination from "../../component/pagination";
 
 const data = [
   {
@@ -103,7 +102,7 @@ export const ArticleListSection = () => {
         <Container>
           <Row>
             {data.map((item, ind) => (
-              <Col lg={8}>
+              <Col xs={12}>
                 <ArticleListCard
                   key={ind}
                   name={item.name}
@@ -116,25 +115,7 @@ export const ArticleListSection = () => {
               </Col>
             ))}
           </Row>
-          <div
-            className={`${styles.blog_pagination} blog-pagination text-center`}
-          >
-            <a href="#0">
-              <i>
-                <FontAwesomeIcon icon={faAngleLeft} />
-              </i>
-            </a>{" "}
-            <a href="#0">01</a>
-            <a href="#0" className="active">
-              02
-            </a>
-            <a href="#0">03</a>
-            <a href="#0">
-              <i>
-                <FontAwesomeIcon icon={faAngleRight} />
-              </i>
-            </a>{" "}
-          </div>
+          <Pagination/>
         </Container>
       </div>
     </>

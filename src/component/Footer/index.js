@@ -44,10 +44,8 @@ export const Footer = () => {
             <div
               className={`${styles.footer_widget} footer-widget about-widget`}
             >
-              {" "}
               <a href="#">
-                {" "}
-                <img alt="" src={`${brand.src}`} />{" "}
+                <img alt="" src={`${brand.src}`} />
               </a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -125,53 +123,47 @@ export const Footer = () => {
               <H3 class="title">Contact Info</H3>
               <ul class="footer-adress">
                 <li class="footer_address">
-                  {" "}
                   <i>
-                    <FontAwesomeIcon icon={faMapSigns} />{" "}
+                    <FontAwesomeIcon icon={faMapSigns} />
                   </i>
-                  <span>123 Lorem Ipsum, 45 sit Atlanta</span>{" "}
+                  <span>123 Lorem Ipsum, 45 sit Atlanta</span>
                 </li>
                 <li class="footer_email">
-                  {" "}
                   <i>
-                    <FontAwesomeIcon icon={faEnvelope} />{" "}
+                    <FontAwesomeIcon icon={faEnvelope} />
                   </i>
                   <span>
-                    <a href="mailto:info@realestate.com">
-                      {" "}
-                      info@realestate.com{" "}
-                    </a>
-                  </span>{" "}
+                    <a href="mailto:info@realestate.com">info@realestate.com</a>
+                  </span>
                 </li>
                 <li className={styles.footer_phone}>
-                  {" "}
                   <i>
-                    <FontAwesomeIcon icon={faPhoneAlt} />{" "}
+                    <FontAwesomeIcon icon={faPhoneAlt} />
                   </i>
                   <span>
                     <a href="tel:7704282433"> 770-123-4567</a>
-                  </span>{" "}
+                  </span>
                 </li>
               </ul>
             </div>
             <div className={styles.social_icons}>
               <ul>
-                <li>
+                <li className="ml-1">
                   <a href="#">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </li>
-                <li>
+                <li className="ml-1">
                   <a href="#">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
-                <li>
+                <li className="ml-1">
                   <a href="#">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
-                <li>
+                <li className="ml-1">
                   <a href="#">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>

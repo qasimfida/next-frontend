@@ -2,7 +2,6 @@
   background: #fff;
   padding: 18px;
   box-shadow: 0 0 20px rgb(0 0 0 / 15%);
-  max-width: 70%;
 }
 .property_box p {
   padding-top: 10px;
@@ -29,7 +28,7 @@
   color: #ffb900;
 }
 
-.pr .property_box h3 {
+.property_box h3 {
   margin-top: 10px;
   line-height: 24px;
 }
@@ -43,8 +42,18 @@
 .property_box span:last-child {
   border-right: none;
 }
+.property_box:hover .propertyImg img {
+  transform: scale(1.2);
+  transition: 0.2s all ease-in-out;
+}
+.propertyImg {
+  overflow: hidden;
+}
 .propertyImg img {
   max-width: 100%;
+  width: 100%;
+  transition: 0.2s all ease-in-out;
+
 }
 .about_box ul {
   list-style: none;

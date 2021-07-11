@@ -1,14 +1,6 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import styled from "styled-components";
-import * as Icon from "react-feather";
-import { WrapperTopBar } from "./styles";
 import { Col, Container, Row } from "react-bootstrap";
-import {
-  faHeart,
-  faCommentDots,
-  faShareSquare,
-} from "@fortawesome/free-regular-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -17,8 +9,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCheckSquare, faCoffee } from "@fortawesome/fontawesome-free-solid";
 import styles from "../../styles/components/topBar.module.css";
 export const TopBar = () => {
   return (
@@ -27,22 +17,22 @@ export const TopBar = () => {
         <Row>
           <Col lg={6} md={4} className="align-self-center">
             <ul className={styles.social_media}>
-              <li>
+              <li className="mr-1" >
                 <a href="#">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </li>
-              <li>
+              <li className="mr-1" >
                 <a href="#">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
-              <li>
+              <li className="mr-1" >
                 <a href="#">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
-              <li>
+              <li className="mr-1" >
                 <a href="#">
                   <FontAwesomeIcon icon={faYoutube} />
                 </a>

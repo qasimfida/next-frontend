@@ -1,15 +1,17 @@
+import WithLayout from "../component/layout";
 import TopBar from "../component/topBar";
 import AboutSection from "../container/About";
 import BuySellSection from "../container/BuySellSection";
 import TeamSection from "../container/TeamSection";
 
-export default function Home() {
+const Home= ()=> {
   return (
-    <>
-      <TopBar />
+    <WithLayout>
       <AboutSection />
       <BuySellSection />
       <TeamSection />
-    </>
+    </WithLayout>
   );
 }
+
+export default Home

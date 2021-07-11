@@ -34,6 +34,7 @@ export const ArticleSection = () => {
           <div className="listing_wrap">
             <Row>
               {data.map((item, ind) => (
+                <Col xs={12} lg={8} >
                 <ArticleCard
                   key={ind}
                   name={item.name}
@@ -45,6 +46,7 @@ export const ArticleSection = () => {
                   quotes={item.quotes}
                   description={item.description}
                 />
+                </Col>
               ))}
             </Row>
           </div>

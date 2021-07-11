@@ -21,6 +21,11 @@
   text-shadow: 0 0 20px rgba(212, 158, 158, 0.21);
   font-weight: 800;
 }
+@media (max-width: 992px) {
+  .zero_page h2 {
+    font-size: 200px;
+  }
+}
 .zero_page h3 {
   color: #111111;
   font-weight: 600;
@@ -29,7 +34,7 @@
 }
 .zero_page p {
   letter-spacing: 2px;
-  padding: 0 250px;
+  padding: 0 40px;
   font-size: 14px;
   line-height: 24px;
   color: #333;

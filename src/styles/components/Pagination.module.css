@@ -1,0 +1,26 @@
+.blog_pagination {
+    margin-top: 30px;
+  }
+  .blog_pagination a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #ffb900;
+    border: 1px solid #ffb900;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 3px;
+  }
+  .blog_pagination a:hover {
+    background: #ffb900;
+    color: #ffffff;
+  }
+  .blog_pagination a.active {
+    background: #ffb900;
+    color: #ffffff;
+  }
+  

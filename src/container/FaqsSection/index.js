@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 import { Container, Card, Form } from "react-bootstrap";
-import styles from "../../styles/container/faqs.module.css";
+import styles from "../../styles/container/Faqs.module.css";
 
 function FaqsSection() {
   return (

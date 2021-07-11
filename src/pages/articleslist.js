@@ -1,11 +1,10 @@
-import TopBar from "../component/topBar";
+import WithLayout from "../component/layout";
 import ArticleListSection from "../container/ArticlesListSection";
 
 export default function Home() {
   return (
-    <>
-      <TopBar />
+    <WithLayout>
       <ArticleListSection />
-    </>
+    </WithLayout>
   );
 }
