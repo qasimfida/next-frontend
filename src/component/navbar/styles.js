@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const WrapperNavigationBar = styled.div`
   .navbar {
@@ -16,7 +16,7 @@ export const WrapperNavigationBar = styled.div`
     padding: 12px 16px;
     color: #727280;
     text-transform: uppercase;
-    z-index: 1000;
+    z-index: 1 !important;
     font-weight: bold;
   }
   .caret {
@@ -42,7 +42,7 @@ export const WrapperNavigationBar = styled.div`
     z-index: 1000;
   }
   .header-wrap .dropdown-menu:before {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -305,8 +305,7 @@ export const WrapperNavigationBar = styled.div`
       overflow-y: auto;
       visibility: hidden;
       background-color: rgba(0, 0, 0, 0.8);
-      transition: visibility 0.3s ease-in-out,
-        -webkit-transform 0.3s ease-in-out;
+      transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
       transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
         -webkit-transform 0.3s ease-in-out;

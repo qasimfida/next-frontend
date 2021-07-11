@@ -1,31 +1,27 @@
-import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import styled from "styled-components";
-import * as Icon from "react-feather";
-import { WrapperTopBar } from "./styles";
-import { Col, Container, Row } from "react-bootstrap";
-import {
-  faHeart,
-  faCommentDots,
-  faShareSquare,
-} from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import styled from 'styled-components';
+import * as Icon from 'react-feather';
+import { WrapperTopBar } from './styles';
+import { Col, Container, Row } from 'react-bootstrap';
+import { faHeart, faCommentDots, faShareSquare } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faLinkedinIn,
   faTwitter,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCheckSquare, faCoffee } from "@fortawesome/fontawesome-free-solid";
-import styles from "../../styles/components/topBar.module.css";
+import styles from '../../styles/components/topBar.module.css';
 export const TopBar = () => {
   return (
     <div className={styles.topbar_wrap}>
       <Container>
         <Row>
-          <Col lg={6} md={4} className="align-self-center">
+          <Col sm={12} lg={6} md={4} className="align-self-center top-bar-left">
             <ul className={styles.social_media}>
               <li>
                 <a href="#">
@@ -49,11 +45,11 @@ export const TopBar = () => {
               </li>
             </ul>
           </Col>
-          <Col class="col-lg-6 col-md-8">
-            <div className={styles.top_right}>
+          <Col sm={12} md={8} lg={6}>
+            <div className={`${styles.top_right} top-bar-right`}>
               <div className={styles.topbar_phone}>
                 <a href="#">
-                  <FontAwesomeIcon icon={faPhoneAlt} /> (770) 123 4657{" "}
+                  <FontAwesomeIcon icon={faPhoneAlt} /> (770) 123 4657{' '}
                 </a>
               </div>
               <div className={styles.topbar_login}>

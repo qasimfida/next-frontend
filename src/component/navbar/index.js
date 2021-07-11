@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import * as Icon from "react-feather";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState } from 'react';
+import * as Icon from 'react-feather';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Col,
   Container,
@@ -11,102 +11,155 @@ import {
   Form,
   FormControl,
   Button,
-} from "react-bootstrap";
+} from 'react-bootstrap';
 
-import logo from "../../assets/logo.png";
-import styles from "../../styles/components/navbar.module.css";
-import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
+import logo from '../../assets/logo.png';
+import styles from './../../styles/components/navbar.module.css';
+import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 
 export const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   const handleClick = () => {
     setIsOpen((pre) => !pre);
-    console.log("click");
+    console.log('click');
   };
+  const toggleDropdown = (idx) => {
+    if (showDropdown === idx) {
+      setShowDropdown(false);
+    } else {
+      setShowDropdown(idx);
+    }
+  };
+  const menuItems = [
+    {
+      id: 0,
+      name: 'home',
+      link: '#',
+      items: [
+        {
+          name: 'Home Image',
+          link: '#',
+        },
+        {
+          name: 'Home Slider',
+          link: '#',
+        },
+        {
+          name: 'Home Video',
+          link: '#',
+        },
+        {
+          name: 'Home Map',
+          link: '#',
+        },
+      ],
+    },
+    {
+      id: 1,
+      name: 'listing',
+      link: '#',
+      items: [
+        { name: 'Property Grid', link: '#' },
+        { name: 'Property List', link: '#' },
+        { name: 'Property Map', link: '#' },
+        { name: 'Property Single', link: '#' },
+      ],
+    },
+    {
+      id: 2,
+      name: 'Features',
+      link: '#',
+      items: [
+        { name: 'Property Grid', link: '#' },
+        { name: 'Property List', link: '#' },
+        { name: 'Property Map', link: '#' },
+        { name: 'Property Single', link: '#' },
+      ],
+    },
+    {
+      id: 3,
+      name: 'Pages',
+      link: '#',
+      items: [
+        { name: 'Property Grid', link: '#' },
+        { name: 'Property List', link: '#' },
+        { name: 'Property Map', link: '#' },
+        { name: 'Property Single', link: '#' },
+      ],
+    },
+    {
+      id: 4,
+      name: 'Blog',
+      link: '#',
+      items: [
+        { name: 'Property Grid', link: '#' },
+        { name: 'Property List', link: '#' },
+        { name: 'Property Map', link: '#' },
+        { name: 'Property Single', link: '#' },
+      ],
+    },
+  ];
   return (
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand className="header_logo" href="#home">
+            <img src={logo.src} alt="" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="none" onClick={handleClick} />
           <Navbar className="d-none d-sm-none d-md-none d-lg-block">
             <Nav className="ml-auto">
-              <NavDropdown
-                className={styles.dropdown}
-                title="Dropdown"
-                id="basic-nav-dropdown"
-              >
-                <ul class="submenu">
-                  <li>
-                    <a href="index.html">Home Image</a>
-                  </li>
-                  <li>
-                    <a href="index_slider.html">Home Slider</a>
-                  </li>
-                  <li>
-                    <a href="index_video.html">Home Video</a>
-                  </li>
-                  <li>
-                    <a href="index_map.html">Home Map</a>
-                  </li>
-                </ul>
-              </NavDropdown>
-              <NavDropdown
-                className={styles.dropdown}
-                title="Dropdown"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              <NavDropdown
-                className={styles.dropdown}
-                title="Dropdown"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#link">Link</Nav.Link>
+              {menuItems.map((item, ind) => (
+                <NavDropdown
+                  onMouseEnter={() => toggleDropdown(item.id)}
+                  onMouseLeave={() => setShowDropdown(false)}
+                  show={showDropdown === ind}
+                  className={styles.dropdown}
+                  title={item.name}
+                  key={ind}
+                  id="basic-nav-dropdown">
+                  <div className="outer">
+                    {item.items.map((option, i) => (
+                      <NavDropdown.Item key={i + i + i} href="#action/3.1">
+                        {option.name}
+                      </NavDropdown.Item>
+                    ))}
+                  </div>
+                </NavDropdown>
+              ))}
+              <div className="navbar_dropdown__1JObr nav-item dropdown">
+                <Nav.Link href="#link">Contact Us</Nav.Link>
+              </div>
             </Nav>
           </Navbar>
         </Container>
       </Navbar>
       {isOpen && (
-        <div className={styles.menu}>
-          <div onClick={() => setIsOpen(false)}>close</div>
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
+        <div className={`${styles.mob_menu} mob_menu`}>
+          <div className="close_div">
+            <span onClick={() => setIsOpen(false)}>&times;</span>
+          </div>
+          {menuItems.map((item, ind) => (
+            <NavDropdown
+              onClick={() => toggleDropdown(item.id)}
+              show={showDropdown === ind}
+              className={styles.dropdown}
+              title={item.name}
+              key={ind}
+              id="basic-nav-dropdown">
+              <div className="outer">
+                {item.items.map((option, i) => (
+                  <NavDropdown.Item key={i + i + i} href="#action/3.1">
+                    {option.name}
+                  </NavDropdown.Item>
+                ))}
+              </div>
+            </NavDropdown>
+          ))}
+          <div className="navbar_dropdown__1JObr nav-item dropdown">
+            <Nav.Link href="#link">Contact Us</Nav.Link>
+          </div>
         </div>
       )}
     </>
