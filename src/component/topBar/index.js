@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -15,32 +14,32 @@ export const TopBar = () => {
     <div className={styles.topbar_wrap}>
       <Container>
         <Row>
-          <Col lg={6} md={4} className="align-self-center">
+          <Col sm={12} lg={6} md={4} className="align-self-center top-bar-left">
             <ul className={styles.social_media}>
-              <li className="mr-1" >
+              <li className="mr-1">
                 <a href="#">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </li>
-              <li className="mr-1" >
+              <li className="mr-1">
                 <a href="#">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
-              <li className="mr-1" >
+              <li className="mr-1">
                 <a href="#">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
-              <li className="mr-1" >
+              <li className="mr-1">
                 <a href="#">
                   <FontAwesomeIcon icon={faYoutube} />
                 </a>
               </li>
             </ul>
           </Col>
-          <Col class="col-lg-6 col-md-8">
-            <div className={styles.top_right}>
+          <Col sm={12} md={8} lg={6}>
+            <div className={`${styles.top_right} top-bar-right`}>
               <div className={styles.topbar_phone}>
                 <a href="#">
                   <FontAwesomeIcon icon={faPhoneAlt} /> (770) 123 4657{" "}
