@@ -53,13 +53,17 @@
   padding: 10px 15px;
   color: #fff;
 } */
-.inputs input {
+.form_outer_row input {
   border: none;
   font-size: 14px;
   border-radius: 0 !important;
   height: 48px;
 }
-.inputs select {
+.form_inner_col {
+  padding: 0 3px !important;
+}
+
+.form_outer_row select {
   border: none;
   font-size: 14px;
   border-radius: 0 !important;
@@ -67,12 +71,12 @@
 }
 .form_wrap {
   background: rgba(255, 255, 255, 0.14);
-  padding: 25px;
+  padding: 25px 34px;
 }
 .form_group {
   margin-bottom: 6px;
 }
-.inputs button {
+.form_outer_row button {
   background: #ffb900;
   border: none;
   cursor: pointer;
@@ -85,7 +89,7 @@
   font-weight: bold;
   height: 48px;
 }
-.inputs button:hover {
+.form_outer_row button:hover {
   background: #000;
   color: #fff;
 }

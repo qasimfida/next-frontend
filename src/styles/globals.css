@@ -151,6 +151,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   text-transform: capitalize;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .dropdown-menu .dropdown-item.active {
@@ -208,4 +209,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.my-tabs a {
+  padding: 10px 15px !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.my-tabs a:hover {
+  background-color: #ffb900 !important;
+}
+
+.my-tabs a.active {
+  background-color: #ffb900 !important;
 }

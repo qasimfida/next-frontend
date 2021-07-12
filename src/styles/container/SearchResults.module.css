@@ -5,8 +5,10 @@
     border: 1px solid rgba(0,0,0,.125);
     padding: 20px;
     margin-top: 40px;
+    transition: 0.3s all ease-in-out;
 }
 .sidebar:hover {
+    transition: 0.3s all ease-in-out;
     border: 1px solid #ffb900;
 }
 .sidebar .sidebar_title {
@@ -17,6 +19,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .sidebar .list_item  {
+    transition: 0.3s all ease-in-out;
     display: block;
     border-bottom: 1px solid #eaeaea;
     padding: 11px 0;
@@ -27,6 +30,7 @@
     border-bottom: none;
 }
 .sidebar .list_item:hover  {
+    transition: 0.3s all ease-in-out;
     color: #ffb900;
 }
 .select{
