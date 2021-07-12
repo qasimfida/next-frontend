@@ -1,10 +1,7 @@
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-
-import { Col, Container, Form, Row, Tab, Tabs } from 'react-bootstrap';
-import SearchForm from '../../component/search-form';
-import styles from '../../styles/container/Slider.module.css';
+import React from "react";
+import { Container, Tab, Tabs } from "react-bootstrap";
+import SearchForm from "../../component/search-form";
+import styles from "../../styles/container/Slider.module.css";
 
 function SliderSection() {
   return (

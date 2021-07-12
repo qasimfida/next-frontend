@@ -69,15 +69,17 @@ export const AgentSection = () => {
           <div className="listing_wrap">
             <Row>
               {data.map((item, ind) => (
-                <AgentCard
-                  key={ind}
-                  agnecyName={item.agnecyName}
-                  img={item.img}
-                  detail={item.detail}
-                />
+                <Col lg={4}>
+                  <AgentCard
+                    key={ind}
+                    agnecyName={item.agnecyName}
+                    img={item.img}
+                    detail={item.detail}
+                  />
+                </Col>
               ))}
             </Row>
-           <Pagination/>
+            <Pagination />
           </div>
         </Container>
       </div>

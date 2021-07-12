@@ -115,7 +115,7 @@ export const ArticleListSection = () => {
               </Col>
             ))}
           </Row>
-          <Pagination/>
+          <Pagination />
         </Container>
       </div>
     </>

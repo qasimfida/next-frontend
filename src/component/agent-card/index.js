@@ -7,11 +7,13 @@ import { faEnvelope, faHourglass } from "@fortawesome/free-regular-svg-icons";
 
 function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
   return (
-    <Col lg={4}>
-      <div className={`${styles.property_box} wow fadeInUp`}>
-        <div className={styles.propertyImg}>
+    <div className={`${mediaLeft ? "d-flex mt-4" : ""} ${styles.property_box}`}>
+      <div>
+        <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
           <img alt="" src={`${img.src}`} />
         </div>
+      </div>
+      <div>
         <h3>
           <a href="#">{agnecyName}</a> <span>{detail}</span>
         </h3>
@@ -54,7 +56,7 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
           </Col>
         </Row>
       </div>
-    </Col>
+    </div>
   );
 }
 

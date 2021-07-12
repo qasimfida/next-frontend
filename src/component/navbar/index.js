@@ -36,7 +36,7 @@ export const NavigationBar = () => {
     {
       id: 0,
       name: "home",
-      link: "#",
+      link: "#/",
       items: [
         {
           name: "Home",
@@ -55,6 +55,7 @@ export const NavigationBar = () => {
       items: [
         { name: "Agencies", link: "/agencies" },
         { name: "Agents", link: "/agents" },
+        { name: "Agency Details", link: "/agencydetails" },
       ],
     },
     {
@@ -62,6 +63,7 @@ export const NavigationBar = () => {
       name: "Property",
       link: "#",
       items: [
+        { name: "Propperty Details", link: "/propertydetail " },
         { name: "Submit Propperty", link: "/submit-property" },
       ],
     },
@@ -69,12 +71,12 @@ export const NavigationBar = () => {
       id: 3,
       name: "Pages",
       items: [
-        {name: 'Faqs', link:"/faqs"},
-        {name: 'About Us', link:"/about"},
-        {name: 'Login', link:"/login"},
-        {name: 'Register', link:"/register"},
+        { name: "Faqs", link: "/faqs" },
+        { name: "About Us", link: "/about" },
+        { name: "Login", link: "/login" },
+        { name: "Register", link: "/register" },
         { name: "Plans", link: "/plans" },
-      ]
+      ],
     },
     {
       id: 4,
@@ -170,12 +172,14 @@ export const NavigationBar = () => {
               </div>
             );
           })}
-          <div className="navbar_dropdown__1JObr nav-item dropdown contact-link">
+          <div
+            className="navbar_dropdown__1JObr nav-item dropdown contact-link"
+            className={styles.contact}
+          >
             <Link className="hi" href="/contact">
               Contact Us
             </Link>
           </div>
-
         </div>
       )}
     </>

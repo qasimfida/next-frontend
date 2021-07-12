@@ -83,7 +83,7 @@
   z-index: 1000;
 }
 .header-wrap .dropdown-menu:before {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -265,4 +265,20 @@
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
     -webkit-transform 0.3s ease-in-out;
   z-index: 9999999;
+}
+.contact {
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact a {
+  text-decoration: none;
+}
+.contact:hover {
+  background-color: #ffb900;
+}
+.contact a:hover {
+  color: #fff;
 }

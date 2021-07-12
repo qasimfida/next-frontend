@@ -57,8 +57,6 @@ Done
 - Featured Agencies
 - Footer
 
-Not started
-
 - Search Results
 - Google Map
 - Side Bar
@@ -85,8 +83,6 @@ Done
 - Agencies
 - Agencies list
 - Page Navigation
-
-Not started
 
 - Agency Details
 - Sidebar

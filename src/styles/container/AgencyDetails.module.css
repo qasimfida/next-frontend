@@ -1,0 +1,72 @@
+.innerHeading {
+  background: url(../../assets/innerHeading.jpg);
+  padding: 40px 0;
+  background-size: cover;
+  text-align: center;
+}
+.innerHeading h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+.innerContent {
+  padding: 60px 0;
+}
+
+.sidebar_form:hover {
+  border-color: #ffb900 !important;
+}
+.input_group {
+  border-right: none;
+  position: relative;
+  margin: 7px 0;
+}
+.form_control {
+  font-size: 13px;
+  border-radius: 0;
+  font-family: "Poppins", sans-serif;
+  height: 52px;
+  padding-right: 46px;
+}
+.form_text {
+  font-size: 13px;
+  border-radius: 0;
+  font-family: "Poppins", sans-serif;
+  height: 144px !important;
+  padding-right: 46px;
+}
+.submit {
+  background: #ffb900;
+  cursor: pointer;
+  padding: 10px 36px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  margin: 7px 0;
+}
+.submit:hover {
+  background: #000;
+}
+.desc_head {
+  font-size: 20px;
+  color: #ffb900;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.innerContent p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+}
+.sliderTxt nav a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: red;
+  border: none;
+  border-radius: 0;
+}
+.sliderTxt nav {
+  border-bottom: 1px solid transparent;
+}
