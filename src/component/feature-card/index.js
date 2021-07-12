@@ -24,7 +24,7 @@ function FeaturedCard({
   return (
     <Card className={styles.feature}>
       <div className={`${mediaLeft ? 'd-flex' : ''} ${styles.property_box}`}>
-        <div className={`${mediaLeft ? 'mr-4' : ''}  ${styles.propertyIm}`}>
+        <div className={`${mediaLeft ? 'mr-4' : ''}  ${styles.propertyImg}`}>
           <Card.Img className={styles.propertyImgInner} variant="top" src={`${img.src}`} />
         </div>
         <div>
@@ -38,14 +38,14 @@ function FeaturedCard({
           <div className={styles.heart_info}>
             <div className={styles.heart_icon}>
               <a href="#">
-                <i class="fas fa-heart" aria-hidden="true">
+                <i className="fas fa-heart" aria-hidden="true">
                   <FontAwesomeIcon icon={faHeart} />
                 </i>
               </a>
             </div>
             <div className={styles.heart_icon}>
               <a href="#">
-                <i class="fas fa-exchange-alt">
+                <i className="fas fa-exchange-alt">
                   <FontAwesomeIcon icon={faExchangeAlt} />
                 </i>
               </a>
