@@ -25,24 +25,6 @@
   border: none;
   border-radius: 0;
 }
-.sliderTxt nav a:hover {
-  text-decoration: none;
-  background-color: #ffb900;
-  border-radius: 0;
-  border: none;
-}
-.sliderTxt nav a:focus {
-  text-decoration: none;
-  background-color: #ffb900;
-  border-radius: 0;
-}
-
-.sliderTxt nav a:visited {
-  background-color: #ffb900 !important;
-  border-color: #ffb900 !important;
-  color: #ffff !important;
-  border-radius: 0;
-}
 .sliderTxt nav {
   border-bottom: 1px solid transparent;
 }
