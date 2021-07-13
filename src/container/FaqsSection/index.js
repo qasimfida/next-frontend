@@ -1,11 +1,18 @@
 import { faFacebookF, faGooglePlusG } from "@fortawesome/free-brands-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
-import { Container, Card, Form } from "react-bootstrap";
+import { Container, Card, Form, Accordion } from "react-bootstrap";
 import styles from "../../styles/container/Faqs.module.css";
 
 function FaqsSection() {
+  const [state, setState] = useState(0);
+  const onChange = (key) => {
+    if (key === state) {
+      setState(null);
+    } else setState(key);
+  };
   return (
     <>
       <div className={styles.innerHeading}>
@@ -21,156 +28,146 @@ function FaqsSection() {
               id="accordion"
             >
               <h3>Work Process</h3>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    <a
-                      aria-expanded="true"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse1"
-                    >
+              <Accordion defaultActiveKey="0">
+                <div className={` ${state === 0 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(0)}>
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="0"
+                  >
+                    <h4 className={styles.panel_heading}>
                       Nunc ut erat at massa elementum tempus.?
-                    </a>
-                  </h4>
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="0">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-                <div id="collapse1" className="panel-collapse collapse">
-                  <div className={styles.panel_body}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.{" "}
-                  </div>
-                </div>
-              </div>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    {" "}
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse2"
-                    >
-                      {" "}
+                <div className={` ${state === 1 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(1)} >
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="1"
+                  >
+                    <h4 className={styles.panel_heading}>
                       Donec lacus sem, pretium a eros ut?
-                    </a>{" "}
-                  </h4>
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="1">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-                <div id="collapse2" className="panel-collapse collapse">
-                  <div className={`${styles.panel_body} panel-body`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.{" "}
-                  </div>
-                </div>
-              </div>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    {" "}
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse3"
-                    >
-                      {" "}
-                      Donec lacus sem, pretium a eros ut?
-                    </a>{" "}
-                  </h4>
-                </div>
-                <div id="collapse3" className="panel-collapse collapse">
-                  <div className={`${styles.panel_body} panel-body`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.{" "}
-                  </div>
-                </div>
-              </div>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    {" "}
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse4"
-                    >
+                <div className={` ${state === 2 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(2)}>
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="2"
+                  >
+                    <h4 className={styles.panel_heading}>
                       Nunc ut erat at massa elementum tempus.?
-                    </a>{" "}
-                  </h4>
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="2">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-                <div id="collapse4" className="panel-collapse collapse">
-                  <div className={`${styles.panel_body} panel-body`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.
-                  </div>
-                </div>
-              </div>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse5"
-                    >
+                <div className={` ${state === 3 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(3)}>
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="3"
+                  >
+                    <h4 className={styles.panel_heading}>
                       Donec lacus sem, pretium a eros ut?
-                    </a>
-                  </h4>
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="3">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-                <div id="collapse5" className="panel-collapse collapse">
-                  <div className={`${styles.panel_body} panel-body`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.
-                  </div>
+                <div className={` ${state === 4 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(4)}>
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="4"
+                  >
+                    <h4 className={styles.panel_heading}>
+                      Nunc ut erat at massa elementum tempus.?
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="4">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-              </div>
-              <div className={`${styles.panel} panel panel-default`}>
-                <div className={`${styles.panel_heading} panel-heading`}>
-                  <h4 className="panel-title">
-                    <a
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      className={styles.collapsed}
-                      href="#collapse6"
-                    >
+                <div className={` ${state === 6 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(6)}>
+                  <Accordion.Toggle
+                    className={styles.panel_head}
+                    as="div"
+                    variant="link"
+                    eventKey="6"
+                  >
+                    <h4 className={styles.panel_heading}>
                       Donec lacus sem, pretium a eros ut?
-                    </a>
-                  </h4>
+                    </h4>
+                  </Accordion.Toggle>
+
+                  <Accordion.Collapse eventKey="6">
+                    <div className={styles.panel_body}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nulla nisl lorem, dapibus at orci vitae, posuere mollis
+                      augue. Suspendisse hendrerit diam sit amet lorem rutrum
+                      auctor. Mauris lacinia ligula sit amet justo scelerisque
+                      vulputate. Interdum et malesuada fames ac ante ipsum
+                      primis in faucibus.
+                    </div>
+                  </Accordion.Collapse>
                 </div>
-                <div id="collapse6" className="panel-collapse collapse">
-                  <div className={`${styles.panel_body} panel-body`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla nisl lorem, dapibus at orci vitae, posuere mollis
-                    augue. Suspendisse hendrerit diam sit amet lorem rutrum
-                    auctor. Mauris lacinia ligula sit amet justo scelerisque
-                    vulputate. Interdum et malesuada fames ac ante ipsum primis
-                    in faucibus.
-                  </div>
-                </div>
-              </div>
+              </Accordion>
             </div>
           </div>
         </Container>

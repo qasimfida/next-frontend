@@ -146,7 +146,7 @@ export const PropertyDetailSection = () => {
                       </div>
                     </div>
                   </div>
-                  <Accordion defaultActiveKey="0">
+                  <Accordion defaultActiveKey="1">
                     <div>
                       <Accordion.Toggle
                         className={styles.toggle_button}

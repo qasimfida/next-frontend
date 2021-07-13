@@ -15,19 +15,18 @@
 .faqs {
   margin-bottom: 30px;
 }
+
 .panel_heading {
+  cursor: pointer;
   background: none;
   border: none;
-  padding: 0;
-}
-.panel_heading h4 {
-  margin-bottom: 0;
-}
-.panel_heading h4 a {
-  padding: 15px 55px 15px 15px;
   display: block;
-
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 15px;
   font-size: 18px;
+  color: #666666;
   position: relative;
 }
 .panel_group h3 {
@@ -40,20 +39,27 @@
   margin-bottom: 20px;
   border: 1px solid #eee;
 }
+.panel:hover .panel_heading {
+  color: white;
+}
+.panel:hover .panel_head {
+  background-color: #ffb900;
+}
 .panel_body {
   line-height: 24px;
   color: #555;
-  padding: 15px;
+  padding:  15px;
   font-size: 14px;
 }
-.collapsed:hover,
-.collapsed h4 a:hover,
-.collapsed h4 a:active {
-  text-decoration: none;
-  background: #ffb900;
-  color: #fff;
+.active .panel_heading {
+  background-color: #ffb900;
+  color: white;
 }
-.faqs h4 a:before {
+.active .panel_heading::before {
+  background-color: #fff;
+}
+
+.faqs h4:before {
   content: "\f068";
   background: #ffb900;
   font-family: "FontAwesome";
@@ -73,34 +79,8 @@
   line-height: 18px;
   border-radius: 50%;
 }
-.collapsed:before {
-  content: "\f067";
-  font-family: "FontAwesome";
-  background: #ffb900;
-  width: 30px;
-  padding: 6px 0;
-  color: #fff;
-  position: absolute;
-  right: 15px;
-  top: 11px;
-  font-size: 16px;
-  display: inline-block;
-  text-align: center;
-  transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  -webkit-transition: 0.3s ease-in;
-  -ms-transition: 0.3s ease-in;
-  text-decoration: none;
-}
-.collapsed {
+.panel:hover .panel_heading:before {
   background: #fff;
-  color: #666;
-  text-decoration: none;
-}
-
-.collapsed:hover:before {
-  background: #fff;
-  color: #ffb900;
 }
 
 .loginWrp {
