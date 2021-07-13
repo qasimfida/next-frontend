@@ -1,7 +1,5 @@
 import React from "react";
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
-import Paragraph from "../Pragraph/index.js";
-// import { Wrapper, QuickLinks, Contact } from "./styles.js";
+import { Col, Container, Row } from "react-bootstrap";
 import small from "./../../assets/property_small01.jpg";
 import brand from "./../../assets/logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -99,7 +97,7 @@ export const Footer = () => {
             <div className={styles.recent}>
               <H3>Recent Properties</H3>
               {data.map((item, ind) => (
-                <div key={ind} className={styles.property_sec}>
+                <div key={`${ind}`} className={styles.property_sec}>
                   <ul key={ind}>
                     <li>
                       <div className={styles.rec_proprty}>
@@ -120,15 +118,15 @@ export const Footer = () => {
           </Col>
           <Col lg={3} md={4}>
             <div className={styles.contact}>
-              <H3 class="title">Contact Info</H3>
-              <ul class="footer-adress">
-                <li class="footer_address">
+              <H3 className="title">Contact Info</H3>
+              <ul className="footer-adress">
+                <li className="footer_address">
                   <i>
                     <FontAwesomeIcon icon={faMapSigns} />
                   </i>
                   <span>123 Lorem Ipsum, 45 sit Atlanta</span>
                 </li>
-                <li class="footer_email">
+                <li className="footer_email">
                   <i>
                     <FontAwesomeIcon icon={faEnvelope} />
                   </i>

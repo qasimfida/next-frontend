@@ -15,7 +15,7 @@ const Pagination = ({active=2}) => {
       </i>
     </a>
     {list.map((item, index)=> {
-        return     <a href="#0" className={active === index}> {item} </a>
+        return     <a href="#0" key={`${index}`} className={active === index? styles.active : ''}> {item} </a>
     })}
     <a href="#0">
       <i>

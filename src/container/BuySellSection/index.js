@@ -6,7 +6,7 @@ import styles from '../../styles/container/BuySell.module.css';
 function BuySellSection() {
   return (
     <div className={styles.buy_wrap}>
-      <Container class="container">
+      <Container className="container">
         <Row className="justify-content-center">
           <Col sm={12} md={8}>
             <h1>Buy or sell your house</h1>

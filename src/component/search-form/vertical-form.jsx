@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Form, Row, Tab, Tabs } from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../../styles/components/VerticalForm.module.css"
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -9,20 +9,20 @@ const VerticalForm = (props) => {
     return  <Form>
     <Row className={styles.inputs} noGutters >
       <Col xs={12} >
-        <Form.Group controlId="">
+        <Form.Group controlId="property_type">
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter Property, Location, Landmark ..."
           />
         </Form.Group>
       </Col>
       <Col xs={12} >
-        <Form.Group controlId="">
+        <Form.Group controlId="property_location">
           <Form.Control type="text" placeholder={type} />
         </Form.Group>
       </Col>
       <Col xs={12} >
-        <Form.Group controlId="exampleForm.ControlSelect1">
+        <Form.Group controlId="select_property">
           <Form.Control as="select">
             <option>Property Type</option>
             <option>Residential</option>
@@ -34,7 +34,7 @@ const VerticalForm = (props) => {
       </Col>
       <Col xs={12} >
         
-        <Form.Group controlId="exampleForm.ControlSelect1">
+        <Form.Group controlId="select_rooms">
           <Form.Control as="select">
             <option>Bedrooms</option>
             <option>1</option>
@@ -50,7 +50,7 @@ const VerticalForm = (props) => {
         </Form.Group>
       </Col>
       <Col xs={12} >
-        <Form.Group controlId="exampleForm.ControlSelect1">
+        <Form.Group controlId="select_rooms1">
           <Form.Control as="select">
             <option>Bedrooms</option>
             <option>1</option>
@@ -66,7 +66,7 @@ const VerticalForm = (props) => {
         </Form.Group>
       </Col>
       <Col xs={12} >
-        <Form.Group controlId="exampleForm.ControlSelect1">
+        <Form.Group controlId="select_price">
           <Form.Control as="select">
             <option>Price</option>
             <option>$1000</option>

@@ -58,7 +58,7 @@ export const AgenciesSection = () => {
             <Row>
               {data.map((item, ind) => (
                 <AgenciesCard
-                  key={ind}
+                  key={`${ind}`}
                   agnecyName={item.agnecyName}
                   img={item.img}
                   detail={item.detail}

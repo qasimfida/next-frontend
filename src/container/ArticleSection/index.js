@@ -34,18 +34,17 @@ export const ArticleSection = () => {
           <div className="listing_wrap">
             <Row>
               {data.map((item, ind) => (
-                <Col xs={12} lg={8} >
-                <ArticleCard
-                  key={ind}
-                  name={item.name}
-                  detail={item.detail}
-                  img={item.img}
-                  date={item.date}
-                  comments={item.comments}
-                  likes={item.likes}
-                  quotes={item.quotes}
-                  description={item.description}
-                />
+                <Col xs={12} lg={8} key={`${ind}`}>
+                  <ArticleCard
+                    name={item.name}
+                    detail={item.detail}
+                    img={item.img}
+                    date={item.date}
+                    comments={item.comments}
+                    likes={item.likes}
+                    quotes={item.quotes}
+                    description={item.description}
+                  />
                 </Col>
               ))}
             </Row>

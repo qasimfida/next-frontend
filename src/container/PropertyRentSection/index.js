@@ -48,7 +48,7 @@ function PropertyRentSection() {
         </Heading>
         <Row>
           {data.map((item, ind) => (
-            <Col lg={4} key={ind}>
+            <Col lg={4} key={`${ind}`}>
               <FeaturedCard
                 title={item.title}
                 address={item.address}

@@ -47,7 +47,7 @@ function FeaturedSection() {
 
         <Row>
           {data.map((item, ind) => (
-            <Col md={4} key={ind}>
+            <Col md={4} key={`${ind}`}>
               <FeaturedCard
                 mediaLeft={false}
                 title={item.title}

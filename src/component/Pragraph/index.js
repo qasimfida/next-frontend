@@ -1,5 +1,4 @@
 import React from "react";
-// import { Wrapper } from "./styles";
 import styles from "../../styles/components/paragraph.module.css";
 
 function Paragraph(props) {

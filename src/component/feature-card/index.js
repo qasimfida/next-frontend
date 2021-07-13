@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import styles from '../../styles/components/featureCard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

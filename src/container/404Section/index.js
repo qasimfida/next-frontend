@@ -7,13 +7,13 @@ function ErrorSection() {
   return (
     <>
       <div className={styles.innerHeading}>
-        <Container class="container">
+        <Container className="container">
           <h1>404 Page</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
-        <Container class="container">
-          <div class="404-wrap wow fadeInUp">
+        <Container className="container">
+          <div className="404-wrap wow fadeInUp">
             <Row>
               <Col lg={12} md={12} sm={12} lxs={12}>
                 <div className={styles.zero_page}>

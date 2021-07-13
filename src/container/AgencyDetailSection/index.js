@@ -154,7 +154,7 @@ export const AgencyDetailSection = () => {
                 <AgenciesCard
                   mediaLeft={true}
                   hasSocialIcons={true}
-                  key={ind}
+                  key={`agency-list-0-${ind}`}
                   agnecyName={item.agnecyName}
                   img={item.img}
                   detail={item.detail}
@@ -195,7 +195,7 @@ export const AgencyDetailSection = () => {
                   {data.map((item, ind) => (
                     <FeaturedCard
                       type="Location"
-                      key={ind}
+                      key={`agency-list-2-${ind}`}
                       mediaLeft={true}
                       title={item.title}
                       address={item.address}
@@ -214,10 +214,9 @@ export const AgencyDetailSection = () => {
                 >
                   <Row>
                     {data2.map((item, ind) => (
-                      <Col lg={6}>
+                      <Col lg={6} key={`agency-list-3-${ind}`}>
                         <AgentCard
                           type="City"
-                          key={ind}
                           mediaLeft={false}
                           agnecyName={item.agnecyName}
                           img={item.img}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Form, Row, Tab, Tabs } from 'react-bootstrap';
+import { Col, Form, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from '../../styles/components/SerachForm.module.css';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -78,7 +78,7 @@ const SearchForm = (props) => {
             </Form.Group>
           </Col>
           <Col className={styles.form_inner_col} lg={2}>
-            <div class="input-btn">
+            <div className="input-btn">
               <button>
                 <FontAwesomeIcon icon={faSearch} className="mr-2" />
                 Search

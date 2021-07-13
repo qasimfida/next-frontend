@@ -1,5 +1,4 @@
 import React from "react";
-import { Card, Button, Col, Row } from "react-bootstrap";
 import styles from "../../styles/container/Pricing.module.css";
 
 function PricingCard({

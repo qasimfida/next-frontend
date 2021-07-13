@@ -49,7 +49,7 @@ function PrictingTableSection() {
         <Container>
           <Row>
             {data.map((item, ind) => (
-              <Col md={4} key={ind}>
+              <Col md={4} key={`${ind}`}>
                 <PricingCard
                   mediaLeft={false}
                   title={item.title}

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 import { Container, Card, Form } from "react-bootstrap";
-import styles from "../../styles/container/login.module.css";
+import styles from "../../styles/container/Login.module.css";
 
 function Login() {
   return (
@@ -16,8 +16,8 @@ function Login() {
       <div className={styles.innerContent}>
         <Container>
           <Card className={`${styles.loginWrp} mx-auto wow fadeInUp`}>
-            <Card.Body class="card-body">
-              <h4 class="card-title mb-4">Register</h4>
+            <Card.Body className="card-body">
+              <h4 className="card-title mb-4">Register</h4>
               <Form action="#">
                 <a
                   href="#"
@@ -37,34 +37,33 @@ function Login() {
                   </i>
                   &nbsp; Sign in with Google
                 </a>
-                <div class="form-group">
+                <div className="form-group">
                   <input
-                    class="form-control"
+                    className="form-control"
                     placeholder="Username"
                     type="text"
                   />
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                   <input
-                    class="form-control"
+                    className="form-control"
                     placeholder="Password"
                     type="password"
                   />
                 </div>
 
-                <div class="form-group">
+                <div className="form-group">
                   {" "}
-                  <a href="#" class="float-right forgot_text">
+                  <a href="#" className="float-right forgot_text">
                     Forgot password?
                   </a>
-                  <label class="float-left custom-control custom-checkbox">
+                  <label className="float-left custom-control custom-checkbox">
                     <input
                       type="checkbox"
-                      class="custom-control-input"
-                      checked=""
+                      className="custom-control-input"
                     />
-                    <span class="custom-control-label"> Remember </span>{" "}
+                    <span className="custom-control-label"> Remember </span>{" "}
                   </label>
                 </div>
 

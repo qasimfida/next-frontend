@@ -37,7 +37,7 @@ function TeamSection() {
         </Heading>
         <Row>
           {data.map((item, ind) => (
-            <Col md={4} key={ind} className={styles.team_card}>
+            <Col md={4} key={`${ind}`} className={styles.team_card}>
               <TeamCard name={item.name} img={item.img} />
             </Col>
           ))}

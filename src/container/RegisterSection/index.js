@@ -15,8 +15,8 @@ function RegisterSection() {
       <div className={styles.innerContent}>
         <Container>
           <Card className={`${styles.loginWrp} mx-auto wow fadeInUp`}>
-            <Card.Body class="card-body">
-              <h4 class="card-title mb-4">Register</h4>
+            <Card.Body className="card-body">
+              <h4 className="card-title mb-4">Register</h4>
               <Form action="#">
                 <a
                   href="#"

@@ -60,7 +60,7 @@ function ContactSection() {
                       </div>
                     </Col>
                     <Col lg={6}>
-                      <div class="form-group">
+                      <div className="form-group">
                         <input
                           id="form_subject"
                           className={`${styles.form_control} form-control`}
@@ -88,7 +88,7 @@ function ContactSection() {
                           <button type="submit" className={styles.sub}>
                             Submit Now{" "}
                             <i
-                              class="fa fa-arrow-circle-right"
+                              className="fa fa-arrow-circle-right"
                               aria-hidden="true"
                             >
                               <FontAwesomeIcon icon={faArrowCircleRight} />
@@ -107,7 +107,7 @@ function ContactSection() {
                   className={styles.map}
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021674.414950062!2d41.11423519392498!3d42.30298232333148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x4f907964122d4ac2!2sGeorgia!5e0!3m2!1sen!2s!4v1545313690667"
                   frameborder="0"
-                  allowfullscreen=""
+                  allowfullscreen={true}
                 ></iframe>
               </div>
             </Col>

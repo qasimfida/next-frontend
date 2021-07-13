@@ -84,7 +84,7 @@ function FeaturedSection() {
         </Row>
         <Row>
           {data.map((item, ind) => (
-            <Col xs={12} lg={gridLayout? 12 : 6}  key={ind}>
+            <Col xs={12} lg={gridLayout? 12 : 6}  key={`${ind}`}>
               <FeaturedCard
                 mediaLeft={gridLayout}
                 title={item.title}

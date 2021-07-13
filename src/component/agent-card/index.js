@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/components/agencies.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,7 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
           <Col lg={4} className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
-                <div class="proprty_icon">
+                <div className="proprty_icon">
                   <i>
                     <FontAwesomeIcon icon={faPhoneAlt} />
                   </i>
@@ -33,8 +33,8 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
           <Col lg={4} className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
-                <div class="proprty_icon">
-                  <i class="far fa-envelope">
+                <div className="proprty_icon">
+                  <i className="far fa-envelope">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </i>
                 </div>
@@ -45,8 +45,8 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
           <Col lg={4} className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
-                <div class="proprty_icon">
-                  <i class="fas fa-map-marker-alt">
+                <div className="proprty_icon">
+                  <i className="fas fa-map-marker-alt">
                     <FontAwesomeIcon icon={faMapMarkerAlt} />
                   </i>
                 </div>

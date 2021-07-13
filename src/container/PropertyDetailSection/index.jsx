@@ -22,10 +22,10 @@ export const PropertyDetailSection = () => {
       </div>
       <div className={styles.innerContent}>
         <Container>
-          <div class="row listing_wrap">
-            <div class="col-lg-4">
+          <div className="row listing_wrap">
+            <div className="col-lg-4">
               <Form>
-                <div class="sidebar_form card card-body  wow fadeInUp">
+                <div className="sidebar_form card card-body  wow fadeInUp">
                   <div className={styles.input_group}>
                     <input
                       type="text"
@@ -58,7 +58,7 @@ export const PropertyDetailSection = () => {
                   </div>
                   <Form.Group
                     className={styles.form_group}
-                    controlId="exampleForm.ControlSelect1"
+                    controlId="property_from_select_status"
                   >
                     <Form.Control as="select">
                       <option>Property Status</option>
@@ -68,7 +68,7 @@ export const PropertyDetailSection = () => {
                   </Form.Group>
                   <Form.Group
                     className={styles.form_group}
-                    controlId="exampleForm.ControlSelect1"
+                    controlId="property_from_select_type"
                   >
                     <Form.Control as="select">
                       <option>Property Type</option>
@@ -80,7 +80,7 @@ export const PropertyDetailSection = () => {
                   </Form.Group>
                   <Form.Group
                     className={styles.form_group}
-                    controlId="exampleForm.ControlSelect1"
+                    controlId="property_from_select_rooms"
                   >
                     <Form.Control as="select">
                       <option>Bedrooms</option>
@@ -97,7 +97,7 @@ export const PropertyDetailSection = () => {
                   </Form.Group>
                   <Form.Group
                     className={styles.form_group}
-                    controlId="exampleForm.ControlSelect1"
+                    controlId="property_from_select_bathrooms"
                   >
                     <Form.Control as="select">
                       <option>Bathrooms</option>
@@ -114,7 +114,7 @@ export const PropertyDetailSection = () => {
                   </Form.Group>
                   <Form.Group
                     className={styles.form_group}
-                    controlId="exampleForm.ControlSelect1"
+                    controlId="property_from_select_price"
                   >
                     <Form.Control as="select">
                       <option>Price</option>
@@ -126,9 +126,9 @@ export const PropertyDetailSection = () => {
                       <option>$6000</option>
                     </Form.Control>
                   </Form.Group>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="input-group">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="input-group">
                         <input
                           type="text"
                           className={`${styles.form_control} form-control`}
@@ -136,8 +136,8 @@ export const PropertyDetailSection = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="input-group">
+                    <div className="col-lg-6">
+                      <div className="input-group">
                         <input
                           type="text"
                           className={`${styles.form_control} form-control`}
@@ -170,7 +170,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-1`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -180,7 +180,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-2`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -190,7 +190,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-3`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -200,7 +200,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-4`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -210,7 +210,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-5`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -220,7 +220,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-6`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -230,7 +230,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-7`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -240,7 +240,7 @@ export const PropertyDetailSection = () => {
                           <div className="mb-3">
                             <Form.Check
                               type="checkbox"
-                              id={`check-api-checkbox`}
+                              id={`check-api-checkbox-8`}
                             >
                               <Form.Check.Input type="checkbox" isValid />
                               <Form.Check.Label />
@@ -251,7 +251,7 @@ export const PropertyDetailSection = () => {
                       </Accordion.Collapse>
                     </div>
                   </Accordion>{" "}
-                  <div class="input-group">
+                  <div className="input-group">
                     <input
                       type="submit"
                       className={styles.submit}

@@ -71,7 +71,7 @@ export const AgentSection = () => {
               {data.map((item, ind) => (
                 <Col lg={4}>
                   <AgentCard
-                    key={ind}
+                    key={`${ind}`}
                     agnecyName={item.agnecyName}
                     img={item.img}
                     detail={item.detail}

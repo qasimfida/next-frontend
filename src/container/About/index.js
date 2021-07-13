@@ -9,14 +9,14 @@ function AboutSection() {
   return (
     <>
       <div className={styles.innerHeading}>
-        <Container class="container">
+        <Container className="container">
           <h1>About Us</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
-        <Container class="container">
+        <Container className="container">
           <Row>
-            <Col class="col-lg-6">
+            <Col className="col-lg-6">
               <div className={styles.about_box}>
                 <h3>About Real Estate</h3>
                 <p>
@@ -28,7 +28,7 @@ function AboutSection() {
                   felis libero, ut suscipit nisl varius non. Proin eget suscipit
                   nulla. Nulla facilisi. In hac habitasse platea dictumst.{" "}
                 </p>
-                <ul class="tick">
+                <ul className="tick">
                   <li>
                     <FontAwesomeIcon
                       icon={faArrowCircleRight}
@@ -81,8 +81,8 @@ function AboutSection() {
                 </ul>
               </div>
             </Col>
-            <Col class="col-lg-6">
-              <div class="aboutImg">
+            <Col className="col-lg-6">
+              <div className="aboutImg">
                 <img alt="" src={`${aboutImg.src}`} />
               </div>
             </Col>

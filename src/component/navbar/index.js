@@ -1,22 +1,14 @@
 import React, { useState } from "react";
-import * as Icon from "react-feather";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import {
-  Col,
   Container,
   Nav,
   Navbar,
   NavDropdown,
-  Row,
-  Form,
-  FormControl,
-  Button,
 } from "react-bootstrap";
 
 import logo from "../../assets/logo.png";
 import styles from "./../../styles/components/navbar.module.css";
-import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 
 export const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -107,13 +99,13 @@ export const NavigationBar = () => {
                       show={showDropdown === ind}
                       className={styles.dropdown}
                       title={item.name}
-                      key={ind}
+                      key={`${ind}`}
                       id="basic-nav-dropdown"
                     >
                       <div className="outer">
                         {item.items.map((option, i) => {
                           return (
-                            <NavDropdown.Item key={i + i + i}>
+                            <NavDropdown.Item key={`${i + i + i}`}>
                               <Link href={option.link}>{option.name}</Link>
                             </NavDropdown.Item>
                           );
@@ -151,12 +143,12 @@ export const NavigationBar = () => {
                   show={showDropdown === ind}
                   className={styles.dropdown}
                   title={item.name}
-                  key={ind}
+                  key={`${ind}`}
                   id="basic-nav-dropdown"
                 >
                   <div className="outer">
                     {item.items.map((option, i) => (
-                      <NavDropdown.Item key={i + i + i} href="#action/3.1">
+                      <NavDropdown.Item key={`${i + i + i}`} href="#action/3.1">
                         <Link href={option.link}>{option.name}</Link>
                       </NavDropdown.Item>
                     ))}

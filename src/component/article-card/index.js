@@ -1,7 +1,7 @@
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import styles from "../../styles/components/articleCard.module.css";
 
 const ArticleCard = ({
@@ -23,7 +23,7 @@ const ArticleCard = ({
         <h3>
           <a href="#">{name}</a>
         </h3>
-        <div class="post-meta">
+        <div className="post-meta">
           {" "}
           <span>{date}</span> <span>{comments} Comments</span>{" "}
           <span>{likes} Likes</span>{" "}
@@ -32,7 +32,7 @@ const ArticleCard = ({
         <blockquote>{quotes}</blockquote>
         <p>{description}</p>
         <div className={styles.about_box}>
-          <ul class="tick">
+          <ul className="tick">
             <li>
               <FontAwesomeIcon
                 icon={faArrowCircleRight}

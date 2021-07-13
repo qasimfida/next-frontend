@@ -1,8 +1,4 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import GoogleMaps from "../../component/map";
-import VerticalForm from "../../component/search-form/vertical-form";
-
 import styles from "../../styles/container/SearchResults.module.css";
 
 const CategoryCard = () => {
@@ -17,9 +13,10 @@ const CategoryCard = () => {
   return (
     <div className={styles.sidebar}>
       <h4 className={styles.sidebar_title}>Category</h4>
-      {cateogry.map((item) => {
+      {cateogry.map((item, index) => {
         return (
           <div
+          key={`${index}`}
             className={` d-flex justify-content-between ${styles.list_item}`}
           >
             <span>{item.label}</span>

@@ -19,7 +19,7 @@ function SubmitPropertySection() {
       <div className={styles.innerContent}>
         <Container>
           <h3>Basic Information</h3>
-          <div class="formcol">
+          <div className="formcol">
             <Form>
               <Row className={styles.inputs}>
                 <Col lg={6}>
@@ -77,7 +77,7 @@ function SubmitPropertySection() {
                   <Form.Group controlId="">
                     <div className={styles.uploadphotobx}>
                       <Form.File id="formcheck-api-regular">
-                        <i class="fa fa-upload" aria-hidden="true">
+                        <i className="fa fa-upload" aria-hidden="true">
                           {" "}
                           <FontAwesomeIcon icon={faUpload} />
                         </i>
@@ -135,7 +135,7 @@ function SubmitPropertySection() {
                   </Form.Group>
                 </Col>
                 <Col lg={12}>
-                  <div class="contact-btn">
+                  <div className="contact-btn">
                     <button type="submit" className={styles.sub}>
                       Submit Now{" "}
                       <i aria-hidden="true">

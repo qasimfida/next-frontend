@@ -102,9 +102,8 @@ export const ArticleListSection = () => {
         <Container>
           <Row>
             {data.map((item, ind) => (
-              <Col xs={12}>
+              <Col xs={12} key={`${ind}`}>
                 <ArticleListCard
-                  key={ind}
                   name={item.name}
                   detail={item.detail}
                   img={item.img}
