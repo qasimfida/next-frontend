@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/container/About.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 function AboutSection() {
   return (
@@ -83,7 +84,8 @@ function AboutSection() {
             </Col>
             <Col className="col-lg-6">
               <div className="aboutImg">
-                <img alt="" src={`${aboutImg.src}`} />
+                {/* <img alt="" src={`${aboutImg.src}`} /> */}
+                <Image src={aboutImg} alt="" />
               </div>
             </Col>
           </Row>

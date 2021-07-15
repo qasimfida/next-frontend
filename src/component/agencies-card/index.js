@@ -1,12 +1,10 @@
 import React from "react";
+import Image from "next/image";
 import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/components/agencies.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import {
-  faMapMarkerAlt,
-  faPhoneAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faYoutube,
   faFacebookF,
@@ -26,10 +24,15 @@ const AgenciesCard = ({
       <Col lg={4} className={`${mediaLeft ? "col-lg-12 p-0" : ""}`}>
         <div className={`${mediaLeft ? "d-flex" : ""} ${styles.property_box}`}>
           <div>
-            <div
-              className={`${mediaLeft ? "mr-5" : ""}  ${styles.propertyImg}`}
-            >
-              <img alt="" src={`${img.src}`} />
+            <div className={`${mediaLeft ? "mr-5" : ""} `}>
+              {/* <img alt="" src={`${img.src}`} /> */}
+              <Image
+                src={img}
+                alt=""
+                className="img-fluid"
+                width="1000"
+                height="700"
+              />
             </div>
           </div>
           <div>
@@ -37,7 +40,7 @@ const AgenciesCard = ({
               <a href="#">{agnecyName}</a> <span>{detail}</span>
             </h3>
             <Row className="m-0">
-              <Col lg={4} className={styles.property_info}>
+              <Col lg={4} sm={4} xs={4} className={styles.property_info}>
                 <div className={styles.agent_box}>
                   <a href="#">
                     <div className="proprty_icon">
@@ -49,7 +52,7 @@ const AgenciesCard = ({
                   </a>{" "}
                 </div>
               </Col>
-              <Col lg={4} className={styles.property_info}>
+              <Col lg={4} sm={4} xs={4} className={styles.property_info}>
                 <div className={styles.agent_box}>
                   <a href="#">
                     <div className="proprty_icon">
@@ -61,7 +64,7 @@ const AgenciesCard = ({
                   </a>{" "}
                 </div>
               </Col>
-              <Col lg={4} className={styles.property_info}>
+              <Col lg={4} sm={4} xs={4} className={styles.property_info}>
                 <div className={styles.agent_box}>
                   <a href="#">
                     <div className="proprty_icon">

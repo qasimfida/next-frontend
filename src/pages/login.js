@@ -1,11 +1,12 @@
-import TopBar from "../component/topBar";
+import WithLayout from "../component/layout";
 import Login from "../container/Login";
 
 export default function Home() {
   return (
     <>
-      <TopBar />
-      <Login />
+      <WithLayout>
+        <Login />
+      </WithLayout>
     </>
   );
 }

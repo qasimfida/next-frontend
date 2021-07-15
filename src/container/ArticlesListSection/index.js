@@ -4,6 +4,8 @@ import styles from "../../styles/container/ArticlesList.module.css";
 import logo from "./../../assets/blog01.jpg";
 import ArticleListCard from "../../component/articleListCard";
 import Pagination from "../../component/pagination";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const data = [
   {
@@ -90,6 +92,10 @@ const data = [
 ];
 
 export const ArticleListSection = () => {
+  const router = useRouter();
+  const handleClick = (i) => {
+    router.push("/article/" + i);
+  };
   return (
     <>
       <div className={styles.innerHeading}>
@@ -103,14 +109,16 @@ export const ArticleListSection = () => {
           <Row>
             {data.map((item, ind) => (
               <Col xs={12} key={`${ind}`}>
-                <ArticleListCard
-                  name={item.name}
-                  detail={item.detail}
-                  img={item.img}
-                  date={item.date}
-                  comments={item.comments}
-                  likes={item.likes}
-                />
+                <div onClick={() => handleClick(ind)}>
+                  <ArticleListCard
+                    name={item.name}
+                    detail={item.detail}
+                    img={item.img}
+                    date={item.date}
+                    comments={item.comments}
+                    likes={item.likes}
+                  />
+                </div>
               </Col>
             ))}
           </Row>

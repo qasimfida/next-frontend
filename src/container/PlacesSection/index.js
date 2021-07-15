@@ -6,6 +6,7 @@ import Heading from "../../component/Heading";
 import P from "../../component/Para";
 import photo from "./../../assets/miami.jpg";
 import { Col, Container, Row } from "react-bootstrap";
+import Image from "next/image";
 
 function PlacesSection() {
   return (
@@ -19,7 +20,8 @@ function PlacesSection() {
           <Col md={8}>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">California</a>
               </div>
@@ -29,14 +31,16 @@ function PlacesSection() {
           <Col md={4}>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">New York</a>
               </div>
             </div>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">Miami</a>
               </div>
@@ -45,7 +49,8 @@ function PlacesSection() {
           <Col md={4}>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">San Francisco</a>
               </div>
@@ -54,7 +59,8 @@ function PlacesSection() {
           <Col md={4}>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">Dubai</a>
               </div>
@@ -63,7 +69,8 @@ function PlacesSection() {
           <Col md={4}>
             <div className={styles.popular_img}>
               {" "}
-              <img alt="" src={`${photo.src}`} />
+              {/* <img alt="" src={`${photo.src}`} /> */}
+              <Image src={photo} alt="" />
               <div className={styles.popular_img_text}>
                 <a href="#">Australia</a>
               </div>

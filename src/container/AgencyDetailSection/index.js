@@ -15,8 +15,6 @@ import logo from "../../assets/company01.jpg";
 import AgenciesCard from "../../component/agencies-card";
 import CategoryCard from "../../component/category-card";
 import P from "../../component/Para";
-import Paragraph from "../../component/Pragraph";
-import SearchForm from "../../component/search-form";
 import FeaturedCard from "../../component/feature-card";
 import listImg from "../../assets/list_img01.jpg";
 import AgentCard from "../../component/agent-card";

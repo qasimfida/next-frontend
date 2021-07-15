@@ -20,14 +20,17 @@
 }
 .propertyImg {
   overflow: hidden;
+  min-width: 100% !important;
+  max-width: 100%;
 }
-.propertyImg img {
+/* .propertyImg img {
   width: 100%;
+
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-}
+} */
 .property_info {
   text-align: center;
   margin-top: 15px;

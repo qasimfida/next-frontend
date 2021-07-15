@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import {
-  Container,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
-
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Image from "next/image";
 import logo from "../../assets/logo.png";
 import styles from "./../../styles/components/navbar.module.css";
 
@@ -85,7 +80,8 @@ export const NavigationBar = () => {
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand className="header_logo" href="#home">
-            <img src={logo.src} alt="" />
+            {/* <img src={logo.src} alt="" /> */}
+            <Image src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="none" onClick={handleClick} />
           <Navbar className="d-none d-sm-none d-md-none d-lg-block">

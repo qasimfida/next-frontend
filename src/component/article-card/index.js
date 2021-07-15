@@ -2,6 +2,7 @@ import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card } from "react-bootstrap";
+import Image from "next/image";
 import styles from "../../styles/components/articleCard.module.css";
 
 const ArticleCard = ({
@@ -18,7 +19,8 @@ const ArticleCard = ({
     <>
       <Card className={styles.property_box}>
         <div className={styles.propertyImg}>
-          <img alt="" src={`${img.src}`} />
+          {/* <img alt="" src={`${img.src}`} /> */}
+          <Image src={img} alt="" />
         </div>
         <h3>
           <a href="#">{name}</a>

@@ -50,7 +50,7 @@ function FeaturedSection() {
               className={`${styles.sortbar} d-flex justify-content-between items-center`}
             >
               <div className="d-flex align-items-center ">
-                <span className={`${styles.label} `} >Sort by</span>
+                <span className={`${styles.label} `}>Sort by</span>
                 <Form.Group
                   controlId="exampleForm.ControlSelect1"
                   className={`mb-0 ${styles.form_group}`}
@@ -65,26 +65,42 @@ function FeaturedSection() {
                   </Form.Control>
                 </Form.Group>
               </div>
-              <div className="d-flex">
+              <div className="d-none d-sm-flex ">
                 <div
-                  className={`${gridLayout ? styles.active: ''} ${styles.grid_icon}`}
+                  className={`${gridLayout ? styles.active : ""} ${
+                    styles.grid_icon
+                  }`}
                   onClick={() => setGridLayout(true)}
                 >
-                  <FontAwesomeIcon className={`${styles.icon} ${gridLayout ?styles.active_icon: ''}`} icon={faThLarge} size={"lg"} />
+                  <FontAwesomeIcon
+                    className={`${styles.icon} ${
+                      gridLayout ? styles.active_icon : ""
+                    }`}
+                    icon={faThLarge}
+                    size={"lg"}
+                  />
                 </div>
                 <div
-                  className={`${!gridLayout ? styles.active: ''} ${styles.grid_icon}`}
+                  className={`${!gridLayout ? styles.active : ""} ${
+                    styles.grid_icon
+                  }`}
                   onClick={() => setGridLayout(false)}
                 >
-                  <FontAwesomeIcon className={`${styles.icon} ${!gridLayout ?styles.active_icon: ''}`} icon={faThLarge}  size={"lg"} />
+                  <FontAwesomeIcon
+                    className={`${styles.icon} ${
+                      !gridLayout ? styles.active_icon : ""
+                    }`}
+                    icon={faThLarge}
+                    size={"lg"}
+                  />
                 </div>
               </div>
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="d-none d-sm-flex  ">
           {data.map((item, ind) => (
-            <Col xs={12} lg={gridLayout? 12 : 6}  key={`${ind}`}>
+            <Col xs={12} lg={gridLayout ? 12 : 6} key={`${ind}`}>
               <FeaturedCard
                 mediaLeft={gridLayout}
                 title={item.title}
@@ -98,6 +114,22 @@ function FeaturedSection() {
             </Col>
           ))}
         </Row>
+        <Row className="d-flex d-sm-none d-md-none d-lg-none ">
+          {data.map((item, ind) => (
+            <Col xs={12} key={`${ind}`}>
+              <FeaturedCard
+                title={item.title}
+                address={item.address}
+                img={item.img}
+                price={item.price}
+                bedrooms={item.bedrooms}
+                bathrooms={item.bathrooms}
+                garage={item.garage}
+              />
+            </Col>
+          ))}
+        </Row>
+
         <Row className="justify-content-center">
           <Pagination />
         </Row>

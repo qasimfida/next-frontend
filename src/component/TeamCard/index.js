@@ -5,6 +5,7 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 import styles from "../../styles/components/teamCard.module.css";
 
 function TeamCard({ name, img }) {
@@ -12,7 +13,8 @@ function TeamCard({ name, img }) {
     <div className={styles.team_wrp}>
       <div className={styles.team_member}>
         <div className={styles.team_img}>
-          <img alt="" src={`${img.src}`} />
+          {/* <img alt="" src={`${img.src}`} /> */}
+          <Image src={img} alt="" />
         </div>
         <div className={styles.team_icons}>
           <ul>
@@ -44,7 +46,7 @@ function TeamCard({ name, img }) {
         </div>
       </div>
     </div>
-      );
+  );
 }
 
 export default TeamCard;

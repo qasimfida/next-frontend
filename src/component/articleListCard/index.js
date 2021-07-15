@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import styles from "../../styles/container/ArticlesList.module.css";
+import Image from "next/image";
 
 const ArticleListCard = ({ name, date, detail, img, likes, comments }) => {
   return (
@@ -9,7 +10,8 @@ const ArticleListCard = ({ name, date, detail, img, likes, comments }) => {
         <Row className="d-flex">
           <Col lg={5}>
             <div className={styles.propertyImg}>
-              <img alt="" src={`${img.src}`} />
+              {/* <img alt="" src={`${img.src}`} /> */}
+              <Image src={img} alt="" />
             </div>
           </Col>
           <Col lg={7}>
