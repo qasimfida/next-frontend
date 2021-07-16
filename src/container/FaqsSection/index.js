@@ -15,7 +15,7 @@ function FaqsSection() {
   };
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>404</h1>
         </Container>
@@ -29,7 +29,12 @@ function FaqsSection() {
             >
               <h3>Work Process</h3>
               <Accordion defaultActiveKey="0">
-                <div className={` ${state === 0 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(0)}>
+                <div
+                  className={` ${state === 0 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(0)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"
@@ -52,7 +57,12 @@ function FaqsSection() {
                     </div>
                   </Accordion.Collapse>
                 </div>
-                <div className={` ${state === 1 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(1)} >
+                <div
+                  className={` ${state === 1 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(1)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"
@@ -75,7 +85,12 @@ function FaqsSection() {
                     </div>
                   </Accordion.Collapse>
                 </div>
-                <div className={` ${state === 2 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(2)}>
+                <div
+                  className={` ${state === 2 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(2)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"
@@ -98,7 +113,12 @@ function FaqsSection() {
                     </div>
                   </Accordion.Collapse>
                 </div>
-                <div className={` ${state === 3 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(3)}>
+                <div
+                  className={` ${state === 3 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(3)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"
@@ -121,7 +141,12 @@ function FaqsSection() {
                     </div>
                   </Accordion.Collapse>
                 </div>
-                <div className={` ${state === 4 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(4)}>
+                <div
+                  className={` ${state === 4 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(4)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"
@@ -144,7 +169,12 @@ function FaqsSection() {
                     </div>
                   </Accordion.Collapse>
                 </div>
-                <div className={` ${state === 6 ? styles.active : ''} ${styles.panel}`} onClick={() => onChange(6)}>
+                <div
+                  className={` ${state === 6 ? styles.active : ""} ${
+                    styles.panel
+                  }`}
+                  onClick={() => onChange(6)}
+                >
                   <Accordion.Toggle
                     className={styles.panel_head}
                     as="div"

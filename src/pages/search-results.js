@@ -8,4 +8,4 @@ export default function SearchResult() {
       <SearchResults />
     </WithLayout>
   );
-};
+}

@@ -98,7 +98,7 @@ export const ArticleListSection = () => {
   };
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Articles List</h1>
         </Container>
@@ -106,6 +106,7 @@ export const ArticleListSection = () => {
 
       <div className={styles.innerContent}>
         <Container>
+          <div className="wow fadeInUp">
           <Row>
             {data.map((item, ind) => (
               <Col xs={12} key={`${ind}`}>
@@ -117,11 +118,12 @@ export const ArticleListSection = () => {
                     date={item.date}
                     comments={item.comments}
                     likes={item.likes}
-                  />
+                    />
                 </div>
               </Col>
             ))}
           </Row>
+            </div>
           <Pagination />
         </Container>
       </div>

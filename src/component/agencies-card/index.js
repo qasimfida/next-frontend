@@ -21,7 +21,10 @@ const AgenciesCard = ({
 }) => {
   return (
     <>
-      <Col lg={4} className={`${mediaLeft ? "col-lg-12 p-0" : ""}`}>
+      <Col
+        lg={4}
+        className={`${mediaLeft ? "col-lg-12 p-0" : ""} wow fadeInUp`}
+      >
         <div className={`${mediaLeft ? "d-flex" : ""} ${styles.property_box}`}>
           <div>
             <div className={`${mediaLeft ? "mr-5" : ""} `}>

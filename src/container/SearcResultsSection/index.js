@@ -42,7 +42,7 @@ const data = [
 function FeaturedSection() {
   const [gridLayout, setGridLayout] = useState(false);
   return (
-    <div className={styles.results_wrapper}>
+    <div className={`${styles.results_wrapper} wow fadeInUp`}>
       <Container>
         <Row className="justify-content-center">
           <Col>

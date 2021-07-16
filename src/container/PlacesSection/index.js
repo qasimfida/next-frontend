@@ -10,13 +10,13 @@ import Image from "next/image";
 
 function PlacesSection() {
   return (
-    <div className={styles.popular_wrapper}>
+    <div className={`${styles.popular_wrapper} wow fadeInUp`}>
       <Container>
         <Heading>
           POPULAR PLACES
           <P>Lorem ipsum dolor sit amet consectetur</P>
         </Heading>
-        <Row className="mt-4">
+        <Row className="mt-4 wow fadeInUp">
           <Col md={8}>
             <div className={styles.popular_img}>
               {" "}

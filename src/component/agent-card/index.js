@@ -8,7 +8,11 @@ import { faEnvelope, faHourglass } from "@fortawesome/free-regular-svg-icons";
 
 function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
   return (
-    <div className={`${mediaLeft ? "d-flex mt-4" : ""} ${styles.property_box}`}>
+    <div
+      className={`${mediaLeft ? "d-flex mt-4" : ""} ${
+        styles.property_box
+      } wow fadeInUp`}
+    >
       <div>
         <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
           {/* <img alt="" src={`${img.src}`} /> */}

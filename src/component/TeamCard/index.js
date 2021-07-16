@@ -10,7 +10,7 @@ import styles from "../../styles/components/teamCard.module.css";
 
 function TeamCard({ name, img }) {
   return (
-    <div className={styles.team_wrp}>
+    <div className={`${styles.team_wrp} wow fadeInUp`}>
       <div className={styles.team_member}>
         <div className={styles.team_img}>
           {/* <img alt="" src={`${img.src}`} /> */}

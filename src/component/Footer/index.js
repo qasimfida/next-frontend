@@ -36,7 +36,7 @@ const data = [
 
 export const Footer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} wow fadeInUp`}>
       <Container>
         <Row>
           <Col lg={3} md={12}>

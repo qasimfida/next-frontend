@@ -6,7 +6,7 @@ import Image from "next/image";
 const ArticleListCard = ({ name, date, detail, img, likes, comments }) => {
   return (
     <>
-      <Card className={styles.wrapper}>
+      <Card className={`${styles.wrapper} wow fadeInUp`}>
         <Row className="d-flex">
           <Col lg={5}>
             <div className={styles.propertyImg}>

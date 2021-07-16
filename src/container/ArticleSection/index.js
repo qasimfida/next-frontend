@@ -24,7 +24,7 @@ const data = [
 export const ArticleSection = () => {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Article</h1>
         </Container>

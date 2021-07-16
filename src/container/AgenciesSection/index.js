@@ -47,14 +47,14 @@ const data = [
 export const AgenciesSection = () => {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Agencies</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
         <Container>
-          <div className="listing_wrap">
+          <div className="listing_wrap wow fadeInUp">
             <Row>
               {data.map((item, ind) => (
                 <AgenciesCard

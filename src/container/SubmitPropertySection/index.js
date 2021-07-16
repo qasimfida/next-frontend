@@ -11,12 +11,12 @@ import styles from "../../styles/container/Submit.module.css";
 function SubmitPropertySection() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Submit Property</h1>
         </Container>
       </div>
-      <div className={styles.innerContent}>
+      <div className={`${styles.innerContent} wow fadeInUp`}>
         <Container>
           <h3>Basic Information</h3>
           <div className="formcol">

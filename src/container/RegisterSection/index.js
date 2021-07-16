@@ -7,7 +7,7 @@ import styles from "../../styles/container/Register.module.css";
 function RegisterSection() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Register</h1>
         </Container>

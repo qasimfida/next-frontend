@@ -17,7 +17,7 @@ const ArticleCard = ({
 }) => {
   return (
     <>
-      <Card className={styles.property_box}>
+      <Card className={`${styles.property_box} wow fadeInUp`}>
         <div className={styles.propertyImg}>
           {/* <img alt="" src={`${img.src}`} /> */}
           <Image src={img} alt="" />

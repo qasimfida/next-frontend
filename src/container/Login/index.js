@@ -8,7 +8,7 @@ import styles from "../../styles/container/Login.module.css";
 function Login() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Login</h1>
         </Container>

@@ -40,7 +40,7 @@ const data = [
 function PrictingTableSection() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Pricing Table</h1>
         </Container>
