@@ -9,7 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function PerfectHomeSection() {
   return (
-    <div className={styles.home_wrapper}>
+    <div className={`${styles.home_wrapper} wow fadeInUp`}>
       <Container>
         <Row className=" align-items-center">
           <Col lg={8}>

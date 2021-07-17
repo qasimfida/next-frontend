@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import small from "./../../assets/property_small01.jpg";
 import brand from "./../../assets/logo2.png";
@@ -35,7 +36,7 @@ const data = [
 
 export const Footer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} wow fadeInUp`}>
       <Container>
         <Row>
           <Col lg={3} md={12}>
@@ -43,7 +44,8 @@ export const Footer = () => {
               className={`${styles.footer_widget} footer-widget about-widget`}
             >
               <a href="#">
-                <img alt="" src={`${brand.src}`} />
+                {/* <img alt="" src={`${brand.src}`} /> */}
+                <Image src={brand} alt="" />
               </a>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -102,7 +104,8 @@ export const Footer = () => {
                     <li>
                       <div className={styles.rec_proprty}>
                         <div className={styles.propertyImg}>
-                          <img alt="" src={`${small.src}`} />
+                          {/* <img alt="" src={`${small.src}`} /> */}
+                          <Image src={small} alt="" />
                         </div>
                         <div className={styles.property_info}>
                           <h5>{item.name}</h5>

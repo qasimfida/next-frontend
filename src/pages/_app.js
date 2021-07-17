@@ -1,18 +1,19 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './../styles/globals.css';
-import Router from 'next/router';
-import { useState } from 'react';
-import Loader from '../component/Loader';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./../styles/globals.css";
+import Router from "next/router";
+import { useState } from "react";
+import Loader from "../component/Loader";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
-  
-  Router.events.on('routeChangeStart', (url) => {
+
+  Router.events.on("routeChangeStart", (url) => {
     setLoading(true);
   });
-  Router.events.on('routeChangeComplete', (url) => {
+  Router.events.on("routeChangeComplete", (url) => {
     setLoading(false);
   });
+
   return (
     <>
       {loading && <Loader />}

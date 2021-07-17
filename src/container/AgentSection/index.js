@@ -59,14 +59,14 @@ const data = [
 export const AgentSection = () => {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Agents</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
         <Container>
-          <div className="listing_wrap">
+          <div className="listing_wrap wow fadeInUp">
             <Row>
               {data.map((item, ind) => (
                 <Col lg={4}>

@@ -38,7 +38,7 @@ const data = [
 
 function PropertyRentSection() {
   return (
-    <div className={styles.property_wrapper}>
+    <div className={`${styles.property_wrapper} wow fadeInUp`}>
       <Container>
         <Heading>
           Properties For Rent
@@ -46,7 +46,7 @@ function PropertyRentSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </P>
         </Heading>
-        <Row>
+        <Row className="wow fadeInUp">
           {data.map((item, ind) => (
             <Col lg={4} key={`${ind}`}>
               <FeaturedCard

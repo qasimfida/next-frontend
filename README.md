@@ -67,8 +67,6 @@ Done
 - Properties List (2 layout types)
 - Page Navigation
 
-Not started
-
 - Property Details
 - Side Bar (Reusable component from the search results page)
 - Image viewer

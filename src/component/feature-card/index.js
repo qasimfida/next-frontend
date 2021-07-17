@@ -1,15 +1,15 @@
-import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
-import styles from '../../styles/components/featureCard.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { Card, Col, Row } from "react-bootstrap";
+import styles from "../../styles/components/featureCard.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
   faExchangeAlt,
   faHeart,
   faMapMarkerAlt,
   faShower,
-} from '@fortawesome/free-solid-svg-icons';
-import { faHourglass } from '@fortawesome/free-regular-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
+import { faHourglass } from "@fortawesome/free-regular-svg-icons";
 
 function FeaturedCard({
   mediaLeft = false,
@@ -22,17 +22,21 @@ function FeaturedCard({
   price,
 }) {
   return (
-    <Card className={styles.feature}>
-      <div className={`${mediaLeft ? 'd-flex' : ''} ${styles.property_box}`}>
-        <div className={`${mediaLeft ? 'mr-4' : ''}  ${styles.propertyImg}`}>
-          <Card.Img className={styles.propertyImgInner} variant="top" src={`${img.src}`} />
+    <Card className={`${styles.feature} wow fadeInUp`}>
+      <div className={`${mediaLeft ? "d-flex" : ""} ${styles.property_box}`}>
+        <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
+          <Card.Img
+            className={styles.propertyImgInner}
+            variant="top"
+            src={`${img.src}`}
+          />
         </div>
         <div>
           <h3>{title}</h3>
           <div className={styles.property_location}>
             <i aria-hidden="true">
               <FontAwesomeIcon icon={faMapMarkerAlt} />
-            </i>{' '}
+            </i>{" "}
             {address}
           </div>
           <div className={styles.heart_info}>

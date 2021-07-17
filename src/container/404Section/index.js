@@ -6,7 +6,7 @@ import styles from "../../styles/container/404.module.css";
 function ErrorSection() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container className="container">
           <h1>404 Page</h1>
         </Container>

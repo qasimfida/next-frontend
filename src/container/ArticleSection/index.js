@@ -3,6 +3,7 @@ import { Card, Button, Col, Row, Container, Pagination } from "react-bootstrap";
 import styles from "../../styles/container/Agents.module.css";
 import logo from "./../../assets/large_img.jpg";
 import ArticleCard from "../../component/article-card";
+import Link from "next/link";
 
 const data = [
   {
@@ -23,7 +24,7 @@ const data = [
 export const ArticleSection = () => {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Article</h1>
         </Container>
@@ -35,16 +36,18 @@ export const ArticleSection = () => {
             <Row>
               {data.map((item, ind) => (
                 <Col xs={12} lg={8} key={`${ind}`}>
-                  <ArticleCard
-                    name={item.name}
-                    detail={item.detail}
-                    img={item.img}
-                    date={item.date}
-                    comments={item.comments}
-                    likes={item.likes}
-                    quotes={item.quotes}
-                    description={item.description}
-                  />
+                  <Link href={`artilce/${ind}`}>
+                    <ArticleCard
+                      name={item.name}
+                      detail={item.detail}
+                      img={item.img}
+                      date={item.date}
+                      comments={item.comments}
+                      likes={item.likes}
+                      quotes={item.quotes}
+                      description={item.description}
+                    />
+                  </Link>
                 </Col>
               ))}
             </Row>

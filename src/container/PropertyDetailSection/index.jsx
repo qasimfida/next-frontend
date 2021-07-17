@@ -15,7 +15,7 @@ import {
 export const PropertyDetailSection = () => {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
           <h1>Property Details</h1>
         </Container>

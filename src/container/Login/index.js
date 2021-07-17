@@ -8,9 +8,9 @@ import styles from "../../styles/container/Login.module.css";
 function Login() {
   return (
     <>
-      <div className={styles.innerHeading}>
+      <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
-          <h1>Register</h1>
+          <h1>Login</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
@@ -59,11 +59,11 @@ function Login() {
                     Forgot password?
                   </a>
                   <label className="float-left custom-control custom-checkbox">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                    />
-                    <span className="custom-control-label"> Remember </span>{" "}
+                    <input type="checkbox" className="custom-control-input" />
+                    <span className="custom-control-label">
+                      {" "}
+                      Remember{" "}
+                    </span>{" "}
                   </label>
                 </div>
 

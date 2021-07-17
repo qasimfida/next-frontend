@@ -38,7 +38,7 @@ const data = [
 
 function FeaturedSection() {
   return (
-    <div className={styles.feature_wrapper}>
+    <div className={`${styles.feature_wrapper}  wow fadeInUp`}>
       <Container>
         <Heading>
           Featured Properties

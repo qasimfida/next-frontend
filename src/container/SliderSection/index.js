@@ -10,7 +10,7 @@ import GoogleMaps from "../../component/map";
 
 function ImageSection() {
   return (
-    <div className={`position-relative ${styles.image_wrap}`}>
+    <div className={`position-relative ${styles.image_wrap} wow fadeInUp`}>
       <Image
         className={`pd-block img-fluid ${styles.slider_background} `}
         layout="fill"
@@ -47,7 +47,7 @@ export function VideoSection() {
 
   return (
     <div
-      className={`position-relative d-flex justify-content-center align-items-center  ${styles.video_wrap}`}
+      className={`position-relative d-flex justify-content-center align-items-center wow fadeInUp ${styles.video_wrap}`}
     >
       <div
         className={`pd-block  position-absolute w-100 img-fluid ${styles.slider_background} `}
@@ -85,7 +85,7 @@ export function VideoSection() {
 }
 export function MapSection() {
   return (
-    <div className={`position-relative  ${styles.map_wrap}`}>
+    <div className={`position-relative  ${styles.map_wrap} wow fadeInUp`}>
       <div className={`pd-block w-100 img-fluid ${styles.video_background} `}>
         <GoogleMaps />
       </div>
@@ -101,7 +101,7 @@ export function MapSection() {
 }
 export function SliderSection() {
   return (
-    <div className={`position-relative  ${styles.map_wrap}`}>
+    <div className={`position-relative wow fadeInUp ${styles.map_wrap}`}>
       <div className={`pd-block w-100 img-fluid ${styles.video_background} `}>
         <Carousel>
           <Carousel.Item interval={1000}>

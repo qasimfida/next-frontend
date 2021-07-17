@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/components/agencies.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,10 +8,15 @@ import { faEnvelope, faHourglass } from "@fortawesome/free-regular-svg-icons";
 
 function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
   return (
-    <div className={`${mediaLeft ? "d-flex mt-4" : ""} ${styles.property_box}`}>
+    <div
+      className={`${mediaLeft ? "d-flex mt-4" : ""} ${
+        styles.property_box
+      } wow fadeInUp`}
+    >
       <div>
         <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
-          <img alt="" src={`${img.src}`} />
+          {/* <img alt="" src={`${img.src}`} /> */}
+          <Image src={img} alt="" />
         </div>
       </div>
       <div>

@@ -29,7 +29,7 @@ const data = [
 
 function TeamSection() {
   return (
-    <div className={styles.team_wrapper}>
+    <div className={`${styles.team_wrapper} wow fadeInUp`}>
       <Container>
         <Heading className="pb-5">
           Meet Our Agents
