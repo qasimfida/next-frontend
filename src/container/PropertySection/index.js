@@ -15,6 +15,8 @@ import {
   faHeart,
   faExchangeAlt,
   faCheck,
+  faAngleRight,
+  faAngleLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'react-slick';
 const detailsLeft = [
@@ -252,14 +254,14 @@ export const PropertySection = () => {
             </div>
             <Col sm={12} lg={8}>
               {/* <FeaturedSection /> */}
-              <Slider {...settings} dots={false}>
+              <Slider {...settings} dots={false} className="property_slick_slider_main">
                 {[1, 2, 3, 4, 5].map((ind) => (
                   <div key={ind}>
                     <Image width={1000} height={500} src={img} alt="" />
                   </div>
                 ))}
               </Slider>
-              <Slider {...multiSlideSettings} dots={false}>
+              <Slider {...multiSlideSettings} dots={false} className="property_slick_slider_main">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((ind) => (
                   <div key={ind}>
                     <Image width="300" height="110" src={img} alt="" />
