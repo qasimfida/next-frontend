@@ -15,7 +15,6 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
     >
       <div>
         <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
-          {/* <img alt="" src={`${img.src}`} /> */}
           <Image src={img} alt="" />
         </div>
       </div>
@@ -24,7 +23,7 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
           <a href="#">{agnecyName}</a> <span>{detail}</span>
         </h3>
         <Row className="m-0">
-          <Col lg={4} className={styles.property_info}>
+          <Col className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
                 <div className="proprty_icon">
@@ -36,7 +35,7 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
               </a>{" "}
             </div>
           </Col>
-          <Col lg={4} className={styles.property_info}>
+          <Col className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
                 <div className="proprty_icon">
@@ -48,7 +47,7 @@ function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
               </a>{" "}
             </div>
           </Col>
-          <Col lg={4} className={styles.property_info}>
+          <Col className={styles.property_info}>
             <div className={styles.agent_box}>
               <a href="#">
                 <div className="proprty_icon">

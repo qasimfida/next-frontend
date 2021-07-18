@@ -69,7 +69,7 @@ export const AgentSection = () => {
           <div className="listing_wrap wow fadeInUp">
             <Row>
               {data.map((item, ind) => (
-                <Col lg={4}>
+                <Col lg={4} key={`${ind}`} >
                   <AgentCard
                     key={`${ind}`}
                     agnecyName={item.agnecyName}

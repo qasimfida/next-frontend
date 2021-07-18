@@ -58,19 +58,19 @@ function FeaturedCard({
           </div>
           <div className={styles.propert_info}>
             <Row className={styles.outer}>
-              <Col className={styles.inner}>
+              <Col xs={4}  className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faBed} />
                 </div>
                 <h5>Bedrooms {bedrooms}</h5>
               </Col>
-              <Col className={styles.inner}>
+              <Col xs={4}  className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faShower} />
                 </div>
                 <h5>Bathrooms {bathrooms}</h5>
               </Col>
-              <Col className={styles.inner}>
+              <Col xs={4}  className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faHourglass} />
                 </div>

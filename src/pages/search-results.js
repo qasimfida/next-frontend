@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import WithLayout from "../component/layout";
 import SearchResults from "../container/SearchResults";
 

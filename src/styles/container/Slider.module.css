@@ -1,8 +1,22 @@
-.slider_wrap {
-  background: url(../../assets/banner-bg.jpg) no-repeat top;
-  background-size: cover;
+.image_wrap {
   padding: 70px 0 80px 0;
 }
+.video_wrap {
+  padding: 70px 0 80px 0;
+  height: 600px;
+  overflow: hidden;
+}
+.map_wrap {
+  background-color: #41444c;
+}
+.slider_background {
+  top: 0;
+  left: 0;
+}
+.map_form {
+  padding: 30px 0;
+}
+
 .sliderTxt h1 {
   font-size: 60px;
   color: #fff;

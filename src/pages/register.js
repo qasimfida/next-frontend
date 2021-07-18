@@ -1,13 +1,10 @@
 import WithLayout from "../component/layout";
-import TopBar from "../component/topBar";
 import RegisterSection from "../container/RegisterSection";
 
-export default function Home() {
+export default function Register() {
   return (
-    <>
-      <WithLayout>
-        <RegisterSection />
-      </WithLayout>
-    </>
+    <WithLayout>
+      <RegisterSection />
+    </WithLayout>
   );
 }

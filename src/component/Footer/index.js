@@ -39,7 +39,7 @@ export const Footer = () => {
     <div className={`${styles.wrapper} wow fadeInUp`}>
       <Container>
         <Row>
-          <Col lg={3} md={12}>
+          <Col lg={3} md={12} className="wow fadeInUp" >
             <div
               className={`${styles.footer_widget} footer-widget about-widget`}
             >
@@ -57,36 +57,36 @@ export const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col lg={2} md={3}>
+          <Col lg={2} md={3} className="wow fadeInUp" >
             <div className={styles.quickLinks}>
               <H3>Quick links</H3>
 
               <ul>
-                <li>
+                <li className="wow fadeInUp"  >
                   <a href="#.">
                     <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                     Home
                   </a>
                 </li>
-                <li>
+                <li className="wow fadeInUp" >
                   <a href="#.">
                     <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                     Properties
                   </a>
                 </li>
-                <li>
+                <li className="wow fadeInUp" >
                   <a href="#.">
                     <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                     Agents
                   </a>
                 </li>
-                <li>
+                <li className="wow fadeInUp" >
                   <a href="#.">
                     <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                     Blogs
                   </a>
                 </li>
-                <li>
+                <li className="wow fadeInUp" >
                   <a href="#.">
                     <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                     Contact Us
@@ -95,13 +95,13 @@ export const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col lg={4} md={5}>
+          <Col lg={4} md={5} className="wow fadeInUp">
             <div className={styles.recent}>
               <H3>Recent Properties</H3>
               {data.map((item, ind) => (
                 <div key={`${ind}`} className={styles.property_sec}>
                   <ul key={ind}>
-                    <li>
+                    <li className="wow fadeInUp">
                       <div className={styles.rec_proprty}>
                         <div className={styles.propertyImg}>
                           {/* <img alt="" src={`${small.src}`} /> */}
@@ -119,17 +119,17 @@ export const Footer = () => {
               ))}
             </div>
           </Col>
-          <Col lg={3} md={4}>
+          <Col lg={3} md={4} className="wow fadeInUp">
             <div className={styles.contact}>
               <H3 className="title">Contact Info</H3>
               <ul className="footer-adress">
-                <li className="footer_address">
+                <li className="footer_address wow fadeInUp">
                   <i>
                     <FontAwesomeIcon icon={faMapSigns} />
                   </i>
                   <span>123 Lorem Ipsum, 45 sit Atlanta</span>
                 </li>
-                <li className="footer_email">
+                <li className="footer_email wow fadeInUp">
                   <i>
                     <FontAwesomeIcon icon={faEnvelope} />
                   </i>
@@ -137,7 +137,7 @@ export const Footer = () => {
                     <a href="mailto:info@realestate.com">info@realestate.com</a>
                   </span>
                 </li>
-                <li className={styles.footer_phone}>
+                <li className={`wow fadeInUp ${styles.footer_phone}`}>
                   <i>
                     <FontAwesomeIcon icon={faPhoneAlt} />
                   </i>
@@ -149,22 +149,22 @@ export const Footer = () => {
             </div>
             <div className={styles.social_icons}>
               <ul>
-                <li className="ml-1">
+                <li className="ml-1 wow fadeInUp">
                   <a href="#">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                 </li>
-                <li className="ml-1">
+                <li className="ml-1 wow fadeInUp">
                   <a href="#">
                     <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
-                <li className="ml-1">
+                <li className="ml-1 wow fadeInUp">
                   <a href="#">
                     <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
-                <li className="ml-1">
+                <li className="ml-1 wow fadeInUp">
                   <a href="#">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>
