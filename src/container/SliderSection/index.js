@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Carousel, Container, Tab, Tabs } from "react-bootstrap";
+import { Button, Carousel, Container, Tab, Tabs } from "react-bootstrap";
 import SearchForm from "../../component/search-form";
 import styles from "../../styles/container/Slider.module.css";
 import bg from "../../assets/banner-bg.jpg";
@@ -101,17 +101,58 @@ export function MapSection() {
 }
 export function SliderSection() {
   return (
-    <div className={`position-relative wow fadeInUp ${styles.map_wrap}`}>
+    <div
+      className={`position-relative wow fadeInUp header-slider  ${styles.map_wrap}`}
+    >
       <div className={`pd-block w-100 img-fluid ${styles.video_background} `}>
         <Carousel>
           <Carousel.Item interval={1000}>
             <Image className="d-block w-100" src={img} alt="First slide" />
+            <Carousel.Caption className={styles.slide_caption}>
+              <h3 className={`wow fadeInDown ${styles.slide_title}`}>
+                find your dreams
+              </h3>
+              <p className={` wow fadeInUp ${styles.slide_description}`}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec{" "}
+                <br />
+                convallis fringilla nibh ac laoreet.
+              </p>
+              <Button className={` wow fadeInUp ${styles.slide_btn}`}>
+                Contact us
+              </Button>
+            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <Image className="d-block w-100" src={img2} alt="Second slide" />
+            <Carousel.Caption className={styles.slide_caption}>
+              <h3 className={`wow fadeInDown ${styles.slide_title}`}>
+                find your dreams
+              </h3>
+              <p className={` wow fadeInUp ${styles.slide_description}`}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec{" "}
+                <br />
+                convallis fringilla nibh ac laoreet.
+              </p>
+              <Button className={` wow fadeInUp ${styles.slide_btn}`}>
+                Contact us
+              </Button>
+            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <Image className="d-block w-100" src={img2} alt="Third slide" />
+            <Carousel.Caption className={styles.slide_caption}>
+              <h3 className={`wow fadeInDown ${styles.slide_title}`}>
+                find your dreams
+              </h3>
+              <p className={` wow fadeInUp ${styles.slide_description}`}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec{" "}
+                <br />
+                convallis fringilla nibh ac laoreet.
+              </p>
+              <Button className={` wow fadeInUp ${styles.slide_btn}`}>
+                Contact us
+              </Button>
+            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>

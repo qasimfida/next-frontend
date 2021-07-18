@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -114,7 +114,7 @@ svg {
     display: inline-block;
     margin-left: 0.255em;
     vertical-align: 0.255em;
-    content: '';
+    content: "";
     border-top: 0.9em solid;
     border-right: 0.7em solid transparent;
     border-bottom: 0;
@@ -255,4 +255,20 @@ svg {
   border: 1px solid #dee2e6;
   padding: 25px;
   border-top: none;
+}
+
+.header-slider .carousel-control-next,
+.header-slider .carousel-control-prev {
+  opacity: 0;
+  margin: 0 20px;
+  width: 50px;
+  height: 60px;
+  top: 46%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.3s all ease-in-out;
+}
+.header-slider:hover .carousel-control-next,
+.header-slider:hover .carousel-control-prev {
+  transition: 0.3s all ease-in-out;
+  opacity: 1;
 }
