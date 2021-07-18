@@ -2,6 +2,7 @@
   background: #fff;
   padding: 18px;
   box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+  cursor: pointer !important;
 }
 .property_box p {
   padding-top: 10px;
@@ -53,7 +54,6 @@
   max-width: 100%;
   width: 100%;
   transition: 0.2s all ease-in-out;
-
 }
 .about_box ul {
   list-style: none;
