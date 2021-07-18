@@ -94,7 +94,7 @@ const data = [
 export const ArticleListSection = () => {
   const router = useRouter();
   const handleClick = (i) => {
-    router.push("/article/" + i);
+    router.push("/artigo/" + i);
   };
   return (
     <>

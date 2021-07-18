@@ -8,6 +8,7 @@ import styles from "../../styles/container/SearchResults.module.css";
 import Pagination from "../../component/pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThLarge, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
 
 const data = [
   {
@@ -40,6 +41,10 @@ const data = [
 ];
 
 function FeaturedSection() {
+  const router = useRouter();
+  const handleClick = (i) => {
+    router.push("/imovel/" + i);
+  };
   const [gridLayout, setGridLayout] = useState(false);
   return (
     <div className={`${styles.results_wrapper} wow fadeInUp`}>
@@ -101,31 +106,35 @@ function FeaturedSection() {
         <Row className="d-none d-sm-flex  ">
           {data.map((item, ind) => (
             <Col xs={12} lg={gridLayout ? 12 : 6} key={`${ind}`}>
-              <FeaturedCard
-                mediaLeft={gridLayout}
-                title={item.title}
-                address={item.address}
-                img={item.img}
-                price={item.price}
-                bedrooms={item.bedrooms}
-                bathrooms={item.bathrooms}
-                garage={item.garage}
-              />
+              <div onClick={() => handleClick(ind)}>
+                <FeaturedCard
+                  mediaLeft={gridLayout}
+                  title={item.title}
+                  address={item.address}
+                  img={item.img}
+                  price={item.price}
+                  bedrooms={item.bedrooms}
+                  bathrooms={item.bathrooms}
+                  garage={item.garage}
+                  />
+                </div>
             </Col>
           ))}
         </Row>
         <Row className="d-flex d-sm-none d-md-none d-lg-none ">
           {data.map((item, ind) => (
             <Col xs={12} key={`${ind}`}>
-              <FeaturedCard
-                title={item.title}
-                address={item.address}
-                img={item.img}
-                price={item.price}
-                bedrooms={item.bedrooms}
-                bathrooms={item.bathrooms}
-                garage={item.garage}
-              />
+              <div onClick={() => handleClick(ind)}>
+                <FeaturedCard
+                  title={item.title}
+                  address={item.address}
+                  img={item.img}
+                  price={item.price}
+                  bedrooms={item.bedrooms}
+                  bathrooms={item.bathrooms}
+                  garage={item.garage}
+                  />
+                </div>
             </Col>
           ))}
         </Row>

@@ -70,8 +70,8 @@ export const NavigationBar = () => {
       name: 'Blog',
       link: '#',
       items: [
-        { name: 'Article', link: '/article' },
-        { name: 'Article List', link: '/articlelist' },
+        { name: 'Article List', link: '/artigo' },
+        { name: 'Article', link: '/artigo/1' },
       ],
     },
   ];
