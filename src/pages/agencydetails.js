@@ -1,12 +1,9 @@
 import WithLayout from "../component/layout";
-import TopBar from "../component/topBar";
 import AgencyDetailSection from "../container/AgencyDetailSection";
-export default function Home() {
+export default function AgentDetails() {
   return (
-    <>
-      <WithLayout>
-        <AgencyDetailSection />
-      </WithLayout>
-    </>
+    <WithLayout>
+      <AgencyDetailSection />
+    </WithLayout>
   );
 }

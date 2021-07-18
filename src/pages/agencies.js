@@ -1,8 +1,7 @@
 import WithLayout from "../component/layout";
-import TopBar from "../component/topBar";
 import { AgenciesSection } from "../container/AgenciesSection";
 
-export default function Home() {
+export default function Agencies() {
   return (
     <WithLayout>
       <AgenciesSection />

@@ -4,6 +4,9 @@
   background-size: cover;
   text-align: center;
 }
+.media {
+  height: 320px
+}
 .innerHeading h1 {
   color: #fff;
   font-size: 36px;
@@ -14,7 +17,7 @@
 }
 .property_box {
   background: #fff;
-  padding: 18px;
+  padding: 18px 32px;
   margin-bottom: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }

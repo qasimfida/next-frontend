@@ -11,7 +11,7 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/components/topBar.module.css";
 export const TopBar = () => {
   return (
-    <div className={styles.topbar_wrap}>
+    <div className={` wow fadeInDown ${styles.topbar_wrap}`}>
       <Container>
         <Row>
           <Col sm={12} lg={6} md={4} className="align-self-center top-bar-left">
