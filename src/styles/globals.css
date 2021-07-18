@@ -256,3 +256,27 @@ svg {
   padding: 25px;
   border-top: none;
 }
+
+/* Slick slider css */
+
+.property_slick_slider_main {
+  transition: ease-in-out all 0.5s;
+}
+.property_slick_slider_main .slick-arrow {
+  display: none !important;
+}
+.property_slick_slider_main .slick-prev {
+  left: 15px;
+}
+.property_slick_slider_main .slick-next {
+  right: 43px;
+}
+
+.property_slick_slider_main .slick-arrow::before {
+  font-size: 45px;
+}
+.property_slick_slider_main:hover .slick-arrow {
+  color: #fff;
+  z-index: 99;
+  display: block !important;
+}
