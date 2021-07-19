@@ -58,6 +58,7 @@ svg {
   padding: 6px 10px !important;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-item a {
@@ -67,6 +68,9 @@ svg {
 
 .contact-link:hover a {
   color: #fff;
+}
+.contact-link:hover {
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -146,6 +150,9 @@ svg {
 @media (max-width: 768px) {
   .dropdown-menu .outer {
     margin-top: 5px;
+  }
+  .navbar_contact__3YHfj {
+    cursor: pointer !important;
   }
 }
 

@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import Image from 'next/image';
-import logo from '../../assets/logo.png';
-import styles from './../../styles/components/navbar.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Image from "next/image";
+import logo from "../../assets/logo.png";
+import styles from "./../../styles/components/navbar.module.css";
 
 export const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const handleClick = () => {
     setIsOpen((pre) => !pre);
-    console.log('click');
+    console.log("click");
   };
   const toggleDropdown = (idx) => {
     if (showDropdown === idx) {
@@ -22,56 +22,56 @@ export const NavigationBar = () => {
   const menuItems = [
     {
       id: 0,
-      name: 'home',
-      link: '#/',
+      name: "home",
+      link: "#/",
       items: [
         {
-          name: 'Home',
-          link: '/',
+          name: "Home",
+          link: "/",
         },
         {
-          name: 'Search Results',
-          link: '/search-results',
+          name: "Search Results",
+          link: "/search-results",
         },
       ],
     },
     {
       id: 1,
-      name: 'Agencies',
-      link: '#',
+      name: "Agencies",
+      link: "#",
       items: [
-        { name: 'Agencies', link: '/agencies' },
-        { name: 'Agents', link: '/agents' },
-        { name: 'Agency Details', link: '/agencydetails' },
+        { name: "Agencies", link: "/agencies" },
+        { name: "Agents", link: "/agents" },
+        { name: "Agency Details", link: "/agencydetails" },
       ],
     },
     {
       id: 2,
-      name: 'Property',
-      link: '#',
+      name: "Property",
+      link: "#",
       items: [
-        { name: 'Propperty Details', link: '/imovel ' },
-        { name: 'Submit Propperty', link: '/submit-property' },
+        { name: "Propperty Details", link: "/imovel " },
+        { name: "Submit Propperty", link: "/submit-property" },
       ],
     },
     {
       id: 3,
-      name: 'Pages',
+      name: "Pages",
       items: [
-        { name: 'Faqs', link: '/faqs' },
-        { name: 'About Us', link: '/about' },
-        { name: 'Login', link: '/login' },
-        { name: 'Register', link: '/register' },
-        { name: 'Plans', link: '/plans' },
+        { name: "Faqs", link: "/faqs" },
+        { name: "About Us", link: "/about" },
+        { name: "Login", link: "/login" },
+        { name: "Register", link: "/register" },
+        { name: "Plans", link: "/plans" },
       ],
     },
     {
       id: 4,
-      name: 'Blog',
-      link: '#',
+      name: "Blog",
+      link: "#",
       items: [
-        { name: 'Article List', link: '/artigo' },
-        { name: 'Article', link: '/artigo/1' },
+        { name: "Article List", link: "/artigo" },
+        { name: "Article", link: "/artigo/1" },
       ],
     },
   ];
@@ -96,7 +96,8 @@ export const NavigationBar = () => {
                       className={styles.dropdown}
                       title={item.name}
                       key={`${ind}`}
-                      id="basic-nav-dropdown">
+                      id="basic-nav-dropdown"
+                    >
                       <div className="outer">
                         {item.items.map((option, i) => {
                           return (
@@ -116,11 +117,11 @@ export const NavigationBar = () => {
                   </div>
                 );
               })}
-              <div className="navbar_dropdown__1JObr nav-item dropdown contact-link">
-                <Link className="hi" href="/contact">
+              <Link className="hi" href="/contact">
+                <div className="navbar_dropdown__1JObr nav-item dropdown contact-link">
                   Contact Us
-                </Link>
-              </div>
+                </div>
+              </Link>
             </Nav>
           </Navbar>
         </Container>
@@ -139,7 +140,8 @@ export const NavigationBar = () => {
                   className={styles.dropdown}
                   title={item.name}
                   key={`${ind}`}
-                  id="basic-nav-dropdown">
+                  id="basic-nav-dropdown"
+                >
                   <div className="outer">
                     {item.items.map((option, i) => (
                       <NavDropdown.Item key={`${i + i + i}`} href="#action/3.1">
@@ -158,13 +160,14 @@ export const NavigationBar = () => {
               </div>
             );
           })}
-          <div
-            className="navbar_dropdown__1JObr nav-item dropdown contact-link"
-            className={styles.contact}>
-            <Link className="hi" href="/contact">
+          <Link className="hi" href="/contact">
+            <div
+              className="navbar_dropdown__1JObr nav-item dropdown contact-link"
+              className={styles.contact}
+            >
               Contact Us
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       )}
     </>
