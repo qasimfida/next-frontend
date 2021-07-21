@@ -34,7 +34,7 @@ export const PropertySection = ({ data }) => {
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
-          <h1>Property Details</h1>
+          <h1>Property Single</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>
