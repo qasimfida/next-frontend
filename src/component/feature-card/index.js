@@ -24,14 +24,14 @@ function FeaturedCard({
   return (
     <Card className={`${styles.feature} wow fadeInUp`}>
       <div className={`${mediaLeft ? "d-flex" : ""} ${styles.property_box}`}>
-        <div className={`${mediaLeft ? "mr-4" : ""}  ${styles.propertyImg}`}>
+        <div className={`h-100 ${mediaLeft ? "mr-4 w-50" : ""}  ${styles.propertyImg}`}>
           <Card.Img
-            className={styles.propertyImgInner}
-            variant="top"
-            src={`${img.src}`}
+            className={` ${styles.propertyImgInner}`}
+            variant={mediaLeft ? "left" : "top"}
+            src={img}
           />
         </div>
-        <div>
+        <div className={`${mediaLeft ? 'w-50': ''}`} >
           <h3>{title}</h3>
           <div className={styles.property_location}>
             <i aria-hidden="true">
@@ -58,19 +58,19 @@ function FeaturedCard({
           </div>
           <div className={styles.propert_info}>
             <Row className={styles.outer}>
-              <Col xs={4}  className={styles.inner}>
+              <Col xs={4} className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faBed} />
                 </div>
                 <h5>Bedrooms {bedrooms}</h5>
               </Col>
-              <Col xs={4}  className={styles.inner}>
+              <Col xs={4} className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faShower} />
                 </div>
                 <h5>Bathrooms {bathrooms}</h5>
               </Col>
-              <Col xs={4}  className={styles.inner}>
+              <Col xs={4} className={styles.inner}>
                 <div className={styles.proprty_icon}>
                   <FontAwesomeIcon icon={faHourglass} />
                 </div>

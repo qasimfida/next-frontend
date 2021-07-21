@@ -10,7 +10,6 @@ export const NavigationBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const handleClick = () => {
     setIsOpen((pre) => !pre);
-    console.log('click');
   };
   const toggleDropdown = (idx) => {
     if (showDropdown === idx) {
@@ -26,8 +25,20 @@ export const NavigationBar = () => {
       link: '#/',
       items: [
         {
-          name: 'Home',
+          name: 'Home Image',
           link: '/',
+        },
+        {
+          name: 'Home Slider',
+          link: '/?header=slider',
+        },
+        {
+          name: 'Home Video',
+          link: '/?header=video',
+        },
+        {
+          name: 'Home Map',
+          link: '/?header=map',
         },
         {
           name: 'Search Results',
@@ -40,7 +51,7 @@ export const NavigationBar = () => {
       name: 'Agencies',
       link: '#',
       items: [
-        { name: 'Agencies', link: '/agencies' },
+        { name: 'Agencies', link: '/corretor-imoveis' },
         { name: 'Agents', link: '/agents' },
         { name: 'Agency Details', link: '/agencydetails' },
       ],

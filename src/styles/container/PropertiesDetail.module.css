@@ -188,7 +188,11 @@
   color: #fff;
   text-align: center;
   line-height: 15px;
-  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
   border: 2px solid transparent;
   transition: border-color 0s;
   border-radius: 100%;

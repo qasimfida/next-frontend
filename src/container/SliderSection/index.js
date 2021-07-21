@@ -8,7 +8,7 @@ import img2 from "../../assets/slide2.jpg";
 import Image from "next/image";
 import GoogleMaps from "../../component/map";
 
-function ImageSection() {
+function ImageSection({ handleSubmit }) {
   return (
     <div className={`position-relative ${styles.image_wrap} wow fadeInUp`}>
       <Image
@@ -27,7 +27,7 @@ function ImageSection() {
                 <SearchForm type="Location" />
               </Tab>
               <Tab eventKey="second" title="Rent Property">
-                <SearchForm type="City" />
+                <SearchForm type="City" onSubmit={(data)=>handleSubmit({...data, propDeal: 'forRent'})} />
               </Tab>
             </Tabs>
           </Container>
@@ -36,7 +36,7 @@ function ImageSection() {
     </div>
   );
 }
-export function VideoSection() {
+export function VideoSection({ handleSubmit }) {
   const videoRef = useRef();
 
   useEffect(() => {
@@ -71,10 +71,10 @@ export function VideoSection() {
           <Container>
             <Tabs defaultActiveKey="second" className="my-tabs">
               <Tab eventKey="first" title="Buy Property">
-                <SearchForm type="Location" />
+                <SearchForm type="Location" onSubmit={(data)=>handleSubmit({...data, propDeal: 'forSell'})} />
               </Tab>
               <Tab eventKey="second" title="Rent Property">
-                <SearchForm type="City" />
+                <SearchForm type="City" onSubmit={(data)=>handleSubmit({...data, propDeal: 'forRent'})} />
               </Tab>
             </Tabs>
           </Container>
@@ -83,7 +83,7 @@ export function VideoSection() {
     </div>
   );
 }
-export function MapSection() {
+export function MapSection({ handleSubmit }) {
   return (
     <div className={`position-relative  ${styles.map_wrap} wow fadeInUp`}>
       <div className={`pd-block w-100 img-fluid ${styles.video_background} `}>
@@ -92,14 +92,14 @@ export function MapSection() {
       <Container className="position-relative">
         <div className={styles.map_form}>
           <Container>
-            <SearchForm type="City" />
+            <SearchForm type="City" onSubmit={(data)=>handleSubmit({...data, propDeal: 'forRent'})} />
           </Container>
         </div>
       </Container>
     </div>
   );
 }
-export function SliderSection() {
+export function SliderSection({ handleSubmit }) {
   return (
     <div
       className={`position-relative wow fadeInUp header-slider  ${styles.map_wrap}`}
@@ -159,7 +159,7 @@ export function SliderSection() {
       <Container className="position-relative">
         <div className={styles.map_form}>
           <Container>
-            <SearchForm type="City" />
+            <SearchForm type="City" onSubmit={(data)=>handleSubmit({...data, propDeal: 'forRent'})} />
           </Container>
         </div>
       </Container>

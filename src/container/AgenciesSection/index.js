@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Col, Row, Container, Pagination } from "react-bootstrap";
+import { Card, Button, ColRow, Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/components/agencies.module.css";
 import logo from "../../assets/company01.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,40 +11,12 @@ import {
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import AgenciesCard from "../../component/agencies-card";
-
-const data = [
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-];
-export const AgenciesSection = () => {
+import { useRouter } from "next/router";
+export const AgenciesSection = ({ data }) => {
+  const router = useRouter();
+  const handleClick = (i) => {
+    router.push("/corretor-imoveis/" + i);
+  };
   return (
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
@@ -56,14 +28,14 @@ export const AgenciesSection = () => {
         <Container>
           <div className="listing_wrap wow fadeInUp">
             <Row>
-              {data.map((item, ind) => (
-                <AgenciesCard
-                  key={`${ind}`}
-                  agnecyName={item.agnecyName}
-                  img={item.img}
-                  detail={item.detail}
-                />
-              ))}
+              {data &&
+                data.map((agency) => (
+                  <Col lg={4} key={agency.id}>
+                    <div onClick={() => handleClick(agency.id)}>
+                      <AgenciesCard {...agency} img={logo} />
+                    </div>
+                  </Col>
+                ))}
             </Row>
             <div
               className={`${styles.blog_pagination} blog-pagination text-center`}

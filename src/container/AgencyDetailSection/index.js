@@ -20,42 +20,6 @@ import listImg from "../../assets/list_img01.jpg";
 import AgentCard from "../../component/agent-card";
 import agent from "./../../assets/agent01.jpg";
 
-const data1 = [
-  {
-    agnecyName: "Real Estate Company",
-    img: logo,
-    detail: "Lorem ipsum dolor",
-  },
-];
-const data = [
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: listImg,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: listImg,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: listImg,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-];
 const data2 = [
   {
     agnecyName: "James Adult",
@@ -88,7 +52,7 @@ const data2 = [
     detail: "Lorem ipsum dolor",
   },
 ];
-export const AgencyDetailSection = () => {
+export const AgencyDetailSection = ({ data, properties }) => {
   return (
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
@@ -148,56 +112,29 @@ export const AgencyDetailSection = () => {
               <CategoryCard />
             </Col>
             <Col lg={8}>
-              {data1.map((item, ind) => (
-                <AgenciesCard
-                  mediaLeft={true}
-                  hasSocialIcons={true}
-                  key={`agency-list-0-${ind}`}
-                  agnecyName={item.agnecyName}
-                  img={item.img}
-                  detail={item.detail}
-                />
-              ))}
-
+              <AgenciesCard
+                mediaLeft={true}
+                hasSocialIcons={true}
+                agnecyName={data.name}
+                img={listImg}
+                detail={data.subtitle}
+              />
               <h3 className={styles.desc_head}>Description</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum tempus ullamcorper libero tincidunt fermentum.
-                Phasellus lobortis felis ac molestie dictum. Morbi at efficitur
-                mauris. Aliquam lobortis massa non metus vehicula, at lacinia
-                orci suscipit. Nulla porta urna id turpis aliquet elementum.
-                Praesent condimentum turpis at neque faucibus feugiat. Aenean in
-                dapibus diam. Fusce sit amet neque ornare, maximus sapien eget,
-                feugiat turpis. Praesent quis urna a metus maximus condimentum
-                quis in purus. Nullam molestie aliquet urna. Nunc a elit congue,
-                gravida turpis sed, laoreet orci.
-              </p>
-              <p>
-                Ut pretium, nunc in bibendum iaculis, neque tellus efficitur
-                lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante
-                est, fermentum in laoreet nec, viverra eu mauris. In condimentum
-                ac mauris a efficitur. Ut fringilla sed mauris eget convallis.
-                Phasellus volutpat mattis tincidunt. Pellentesque non lacus
-                felis. Donec ac sem eu libero consequat congue in vehicula
-                justo. Nulla blandit id tortor non luctus. Donec in odio
-                condimentum, condimentum nisi non, porta nisl. Donec sed
-                consectetur erat, eu imperdiet urna. Praesent eu sapien orci.
-              </p>
-
+              <p>{data.description}</p>
               <Tabs defaultActiveKey="second" className="agent-tabs">
                 <Tab
                   eventKey="first"
                   title="Buy Property"
                   className="agent-content"
                 >
-                  {data.map((item, ind) => (
+                  {properties.map((item, ind) => (
                     <FeaturedCard
                       type="Location"
                       key={`agency-list-2-${ind}`}
                       mediaLeft={true}
                       title={item.title}
                       address={item.address}
-                      img={item.img}
+                      img={item.images[0].url}
                       price={item.price}
                       bedrooms={item.bedrooms}
                       bathrooms={item.bathrooms}

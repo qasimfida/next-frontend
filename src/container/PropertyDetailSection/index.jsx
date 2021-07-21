@@ -12,7 +12,7 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const PropertyDetailSection = () => {
+export const PropertyDetailSection = ({ data }) => {
   return (
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
@@ -263,7 +263,7 @@ export const PropertyDetailSection = () => {
               <CategoryCard />
             </div>
             <Col lg={8}>
-              <FeaturedSection />
+              <FeaturedSection data={data} />
             </Col>
           </div>
         </Container>

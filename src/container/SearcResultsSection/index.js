@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./../../assets/47.jpg";
 import Heading from "../../component/Heading";
 import P from "../../component/Para";
@@ -10,42 +10,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThLarge, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 
-const data = [
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-];
+function FeaturedSection({ data = [] }) {
+  const [filter, setFilter] = useState([]);
 
-function FeaturedSection() {
+  useEffect(() => {
+    setFilter(data || []);
+  }, [data]);
+
   const router = useRouter();
   const handleClick = (i) => {
     router.push("/imovel/" + i);
   };
   const [gridLayout, setGridLayout] = useState(false);
+
+  const onSelect = (e) => {
+    const { value } = e.target;
+    setFilter((prev) => {
+      const newState = prev.filter((i) => i.propType === value);
+      return [...newState];
+    });
+  };
   return (
     <div className={`${styles.results_wrapper} wow fadeInUp`}>
       <Container>
@@ -60,13 +44,15 @@ function FeaturedSection() {
                   controlId="exampleForm.ControlSelect1"
                   className={`mb-0 ${styles.form_group}`}
                 >
-                  <Form.Control as="select" className={styles.select}>
-                    <option>Based Property</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                  <Form.Control
+                    onChange={onSelect}
+                    as="select"
+                    className={styles.select}
+                  >
+                    <option disabled>Based Property</option>
+                    <option value="House">House</option>
+                    <option value="Store">Store</option>
+                    <option value="Apartament">Apartament</option>
                   </Form.Control>
                 </Form.Group>
               </div>
@@ -104,44 +90,53 @@ function FeaturedSection() {
           </Col>
         </Row>
         <Row className="d-none d-sm-flex  ">
-          {data.map((item, ind) => (
-            <Col xs={12} lg={gridLayout ? 12 : 6} key={`${ind}`}>
-              <div onClick={() => handleClick(ind)}>
-                <FeaturedCard
-                  mediaLeft={gridLayout}
-                  title={item.title}
-                  address={item.address}
-                  img={item.img}
-                  price={item.price}
-                  bedrooms={item.bedrooms}
-                  bathrooms={item.bathrooms}
-                  garage={item.garage}
+          {filter.length ? (
+            filter.map((item, ind) => (
+              <Col xs={12} lg={gridLayout ? 12 : 6} key={`${item.id}`}>
+                <div onClick={() => handleClick(item.id)}>
+                  <FeaturedCard
+                    mediaLeft={gridLayout}
+                    title={item.title}
+                    address={item.address}
+                    img={item.images[0].url}
+                    price={item.price}
+                    bedrooms={item.bedrooms}
+                    bathrooms={item.bathrooms}
+                    garage={item.garage}
                   />
                 </div>
-            </Col>
-          ))}
+              </Col>
+            ))
+          ) : (
+            <h3 className="text-center w-100 mt-5 "> No data found </h3>
+          )}
         </Row>
         <Row className="d-flex d-sm-none d-md-none d-lg-none ">
-          {data.map((item, ind) => (
-            <Col xs={12} key={`${ind}`}>
-              <div onClick={() => handleClick(ind)}>
-                <FeaturedCard
-                  title={item.title}
-                  address={item.address}
-                  img={item.img}
-                  price={item.price}
-                  bedrooms={item.bedrooms}
-                  bathrooms={item.bathrooms}
-                  garage={item.garage}
+          {filter.length ? (
+            filter.map((item, ind) => (
+              <Col xs={12} key={`${item.id}`}>
+                <div onClick={() => handleClick(item.id)}>
+                  <FeaturedCard
+                    title={item.title}
+                    address={item.address}
+                    img={item.images[0].url}
+                    price={item.price}
+                    bedrooms={item.bedrooms}
+                    bathrooms={item.bathrooms}
+                    garage={item.garage}
                   />
                 </div>
-            </Col>
-          ))}
+              </Col>
+            ))
+          ) : (
+            <h3 className="text-center w-100 mt-5 "> No data found </h3>
+          )}
         </Row>
-
-        <Row className="justify-content-center">
-          <Pagination />
-        </Row>
+        {filter.length > 0 && (
+          <Row className="justify-content-center">
+            <Pagination />
+          </Row>
+        )}
       </Container>
     </div>
   );

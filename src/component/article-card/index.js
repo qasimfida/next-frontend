@@ -2,7 +2,6 @@ import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card } from "react-bootstrap";
-import Image from "next/image";
 import styles from "../../styles/components/articleCard.module.css";
 
 const ArticleCard = ({
@@ -19,14 +18,12 @@ const ArticleCard = ({
     <>
       <Card className={`${styles.property_box} wow fadeInUp`}>
         <div className={styles.propertyImg}>
-          {/* <img alt="" src={`${img.src}`} /> */}
-          <Image src={img} alt="" />
+          <img src={img} alt="blog post" />
         </div>
         <h3>
           <a href="#">{name}</a>
         </h3>
         <div className="post-meta">
-          {" "}
           <span>{date}</span> <span>{comments} Comments</span>{" "}
           <span>{likes} Likes</span>{" "}
         </div>

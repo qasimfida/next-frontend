@@ -22,6 +22,9 @@
   transform: scale(1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .property_box h3 {
   margin-top: 10px;
@@ -87,7 +90,7 @@
 .propert_info h5 {
   font-size: 12px;
   margin-bottom: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #000;
   margin-top: 5px;
 }
@@ -96,7 +99,7 @@
   list-style: none;
 }
 .inner:before {
-  content: '';
+  content: "";
   background: #efefef;
   width: 1px;
   height: 58px;
@@ -126,10 +129,10 @@
   width: 55%;
   color: #000;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .apart:after {
-  content: '';
+  content: "";
   background: #ffb900;
   z-index: -1;
   width: 40px;
@@ -147,5 +150,5 @@
   width: 45%;
   font-size: 16px;
   font-weight: 300;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }

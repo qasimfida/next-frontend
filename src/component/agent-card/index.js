@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import styles from "../../styles/components/agencies.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope, faHourglass } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function AgentCard({ mediaLeft = false, detail, img, agnecyName }) {
   return (

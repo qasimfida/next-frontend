@@ -11,32 +11,67 @@ import ImageSection, {
 } from "../container/SliderSection";
 import WithLayout from "../component/layout";
 import { useRouter } from "next/dist/client/router";
+import realStateData from "../pages/api/data_realestate.json";
+import placesData from "../pages/api/data_articles.json";
+import agentsData from "../pages/api/data_agencies.json";
 
-export default function Home() {
+export default function Home({ places, realState, agentsData }) {
   const router = useRouter();
+
+  const handleSubmit = (data) => {
+    router.push(
+      `/imoveis?propDeal=${data.propDeal}&propType=${data.propType}&location=${data.location}`
+    );
+  };
   const renderHeader = () => {
     const query = router.query && router.query.header;
     if (query === "video") {
-      return <VideoSection />;
+      return <VideoSection handleSubmit={handleSubmit} />;
     }
     if (query === "slider") {
-      return <SliderSection />;
+      return <SliderSection handleSubmit={handleSubmit} />;
     }
     if (query === "map") {
-      return <MapSection />;
+      return <MapSection handleSubmit={handleSubmit} />;
     } else {
-      return <ImageSection />;
+      return <ImageSection handleSubmit={handleSubmit} />;
     }
   };
+
+  const featuredProperties =
+    (realState && realState.filter((i, index) => index < 3)) || [];
+  const propertiesForRent =
+    (realState && realState.filter((i, index) => i.forRent)) || [];
+  const featuredPlaces =
+    (places && places.filter((i) => i.type === "location")) || [];
+  const agents =
+    (agentsData && agentsData.filter((i, index) => index < 3)) || [];
+
+  const handleScrollTop = () => {
+    window.scrollTo(0, 0);
+  };
+  const handleBrowse = () => {
+    router.push("/imovel");
+  };
+
   return (
     <WithLayout>
       {renderHeader()}
-      <FeaturedSection />
-      <BuySellSection />
-      <PlacesSection />
-      <PropertyRentSection />
+      <FeaturedSection data={featuredProperties} />
+      <BuySellSection onSearch={handleScrollTop} onBrowse={handleBrowse} />
+      <PlacesSection data={featuredPlaces} />
+      <PropertyRentSection data={propertiesForRent} />
       <PerfectHomeSection />
-      <TeamSection />
+      <TeamSection data={agents} />
     </WithLayout>
   );
+}
+
+export async function getServerSideProps({ params }) {
+  // const image = await getImages(); //pass the prop from the url
+  const realState = [...realStateData];
+  const places = [...placesData];
+  const agents = [...agentsData];
+
+  return { props: { realState, places } };
 }

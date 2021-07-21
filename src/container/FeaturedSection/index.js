@@ -1,42 +1,16 @@
 import React from "react";
-import Logo from "./../../assets/47.jpg";
 import Heading from "../../component/Heading";
 import P from "../../component/Para";
 import { Col, Container, Row } from "react-bootstrap";
 import FeaturedCard from "../../component/feature-card";
 import styles from "../../styles/container/FeatureSection.module.css";
+import { useRouter } from "next/router";
 
-const data = [
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-  {
-    title: "Upper portion Apartment for sale",
-    address: "Staten Island / Queens",
-    img: Logo,
-    bedrooms: 3,
-    bathrooms: 2,
-    garage: 1,
-    price: "$488.000",
-  },
-];
-
-function FeaturedSection() {
+function FeaturedSection({ data }) {
+  const router = useRouter();
+  const onClick = (id) => {
+    router.push(`/imovel/${id}`);
+  };
   return (
     <div className={`${styles.feature_wrapper}  wow fadeInUp`}>
       <Container>
@@ -48,16 +22,18 @@ function FeaturedSection() {
         <Row>
           {data.map((item, ind) => (
             <Col md={4} key={`${ind}`}>
-              <FeaturedCard
-                mediaLeft={false}
-                title={item.title}
-                address={item.address}
-                img={item.img}
-                price={item.price}
-                bedrooms={item.bedrooms}
-                bathrooms={item.bathrooms}
-                garage={item.garage}
-              />
+              <div className="cursor-pointer" onClick={() => onClick(item.id)}>
+                <FeaturedCard
+                  mediaLeft={false}
+                  title={item.title}
+                  address={item.address}
+                  img={item.images[0].url}
+                  price={item.price}
+                  bedrooms={item.bedrooms}
+                  bathrooms={item.bathrooms}
+                  garage={item.garage}
+                />
+              </div>
             </Col>
           ))}
         </Row>

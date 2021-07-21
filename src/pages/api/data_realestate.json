@@ -1,0 +1,252 @@
+[
+    {
+        "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+        "propId" : "B123",
+        "agencyId" : "29eb16e3-e7e6-4a20-bb11-e55242978af4",
+        "propType" : "Apartment",
+        "forRent" : true,
+        "forSell" : true,
+        "forVacation" : true,
+        "title" : "Luxury Family Home",
+        "address" : "123 Lorem Ipsum, 45 sit Atlanta",
+        "builtDate" : "30-06-2020",
+        "price" : "$ 45558.00",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum. Praesent condimentum turpis at neque faucibus feugiat. Aenean in dapibus diam. Fusce sit amet neque ornare, maximus sapien eget, feugiat turpis. Praesent quis urna a metus maximus condimentum quis in purus. Nullam molestie aliquet urna. Nunc a elit congue, gravida turpis sed, laoreet orci. \nUt pretium, nunc in bibendum iaculis, neque tellus efficitur lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante est, fermentum in laoreet nec, viverra eu mauris. In condimentum ac mauris a efficitur. Ut fringilla sed mauris eget convallis. Phasellus volutpat mattis tincidunt. Pellentesque non lacus felis. Donec ac sem eu libero consequat congue in vehicula justo. Nulla blandit id tortor non luctus. Donec in odio condimentum, condimentum nisi non, porta nisl. Donec sed consectetur erat, eu imperdiet urna. Praesent eu sapien orci.",
+        "size" : "98m²",
+        "garage" : 1,
+        "garageSize" : "8m²",
+        "bathrooms" : 1,
+        "bedrooms" : 2,
+        "features" : [
+            "air conditioning", "Laundry Room", "swiming pool", "air conditioning", "Central Heating", "gym", "alarm", "Central Heating", "spa & massage", "pets allow", "window Covering", "Internet", "car parking"
+        ],
+        "floors" : [],
+        "images" : [
+            {
+                "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            },
+            {
+                "id" : "836c4e65-f35b-4939-ad21-664fa6b733b5",
+                "url" : "http://malikhassan.com/html/evernest/images/slide2.jpg"
+            },
+            {
+                "id" : "b3145908-33e7-40a5-b553-5d535b7c62a1",
+                "url" : "http://malikhassan.com/html/evernest/images/slide3.jpg"
+            },
+            {
+                "id" : "b94d5afa-2cb2-4eb5-9685-b66ce8e18df2",
+                "url" : "http://malikhassan.com/html/evernest/images/slide4.jpg"
+            },
+            {
+                "id" : "c4c3afe1-c595-4660-8557-e5e004ede3df",
+                "url" : "http://malikhassan.com/html/evernest/images/slide5.jpg"
+            },
+            {
+                "id" : "30e213a6-37d6-42ed-a735-601f0d7513b3",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            },
+            {
+                "id" : "b43ed1ba-6abe-47f7-a440-812fcef9ae2d",
+                "url" : "http://malikhassan.com/html/evernest/images/slide2.jpg"
+            },
+            {
+                "id" : "8a52895b-45c3-4249-a2de-f4beda82e831",
+                "url" : "http://malikhassan.com/html/evernest/images/slide3.jpg"
+            },
+            {
+                "id" : "fe17d4da-2d7a-48f6-9467-ed4f22ff0ea1",
+                "url" : "http://malikhassan.com/html/evernest/images/slide4.jpg"
+            },
+            {
+                "id" : "4461b5bc-e9a0-46b2-aacc-d88ea1be9919",
+                "url" : "http://malikhassan.com/html/evernest/images/slide5.jpg"
+            }
+        ]            
+    },
+    {
+        "id" : "836c4e65-f35b-4939-ad21-664fa6b733b5",
+        "propId" : "C3123",
+        "propType" : "House",   
+        "agencyId" : "29eb16e3-e7e6-4a20-bb11-e55242978af4",     
+        "forRent" : false,
+        "forSell" : true,
+        "forVacation" : false,
+        "title" : "Great House, Low Cost",
+        "address" : "123 Lorem Ipsum, 45 sit Atlanta",
+        "builtDate" : "30-06-2020",
+        "price" : "$ 12541.00",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum. Praesent condimentum turpis at neque faucibus feugiat. Aenean in dapibus diam. Fusce sit amet neque ornare, maximus sapien eget, feugiat turpis. Praesent quis urna a metus maximus condimentum quis in purus. Nullam molestie aliquet urna. Nunc a elit congue, gravida turpis sed, laoreet orci. \nUt pretium, nunc in bibendum iaculis, neque tellus efficitur lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante est, fermentum in laoreet nec, viverra eu mauris. In condimentum ac mauris a efficitur. Ut fringilla sed mauris eget convallis. Phasellus volutpat mattis tincidunt. Pellentesque non lacus felis. Donec ac sem eu libero consequat congue in vehicula justo. Nulla blandit id tortor non luctus. Donec in odio condimentum, condimentum nisi non, porta nisl. Donec sed consectetur erat, eu imperdiet urna. Praesent eu sapien orci.",
+        "size" : "98m²",
+        "garage" : 1,
+        "garageSize" : "10m²",
+        "bathrooms" : 2,
+        "bedrooms" : 5,
+        "features" : [
+            "air conditioning", "Laundry Room", "swiming pool", "air conditioning", "Central Heating", "gym", "alarm", "Central Heating", "spa & massage", "pets allow", "window Covering", "Internet", "car parking"
+        ],
+        "floors" : [
+            {
+                "id" : "b94d5afa-2cb2-4eb5-9685-b66ce8e18df2",
+                "title" : "Ground Floor 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/ground_floor.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            },
+            {
+                "id" : "b3145908-33e7-40a5-b553-5d535b7c62a1",
+                "title" : "First Floor 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/first_floor.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            },
+            {
+                "id" : "c4c3afe1-c595-4660-8557-e5e004ede3df",
+                "title" : "Garage 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/garage_plan.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            }
+        ],
+        "images" : [
+            {
+                "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            },
+            {
+                "id" : "836c4e65-f35b-4939-ad21-664fa6b733b5",
+                "url" : "http://malikhassan.com/html/evernest/images/slide2.jpg"
+            }
+        ]        
+    },
+    {
+        "id" : "7b360719-ef74-4229-82b8-7aef3e5a3836",
+        "propId" : "PO59123",
+        "agencyId" : "21e20af8-30c9-495c-86c2-6ae078891250",
+        "propType" : "Store",        
+        "forRent" : false,
+        "forSell" : true,
+        "forVacation" : false,
+        "title" : "PetShop All Ready",
+        "address" : "123 Lorem Ipsum, 45 sit Atlanta",
+        "builtDate" : "30-06-2020",
+        "price" : "$ 12541.00",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum. Praesent condimentum turpis at neque faucibus feugiat. Aenean in dapibus diam. Fusce sit amet neque ornare, maximus sapien eget, feugiat turpis. Praesent quis urna a metus maximus condimentum quis in purus. Nullam molestie aliquet urna. Nunc a elit congue, gravida turpis sed, laoreet orci. \nUt pretium, nunc in bibendum iaculis, neque tellus efficitur lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante est, fermentum in laoreet nec, viverra eu mauris. In condimentum ac mauris a efficitur. Ut fringilla sed mauris eget convallis. Phasellus volutpat mattis tincidunt. Pellentesque non lacus felis. Donec ac sem eu libero consequat congue in vehicula justo. Nulla blandit id tortor non luctus. Donec in odio condimentum, condimentum nisi non, porta nisl. Donec sed consectetur erat, eu imperdiet urna. Praesent eu sapien orci.",
+        "size" : "120m²",
+        "garage" : 2,
+        "garageSize" : "30m²",
+        "bathrooms" : 2,
+        "bedrooms" : 0,
+        "features" : [
+            "air conditioning", "Laundry Room"
+        ],
+        "floors" : [
+            {
+                "id" : "b94d5afa-2cb2-4eb5-9685-b66ce8e18df2",
+                "title" : "Ground Floor 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/ground_floor.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            }
+        ],
+        "images" : [
+            {
+                "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            }
+        ]        
+    },
+    {
+        "id" : "033f4e90-1c22-4183-b22f-101ab65e285b",
+        "propId" : "C3123",
+        "propType" : "Apartament",  
+        "agencyId" : "21e20af8-30c9-495c-86c2-6ae078891250",
+        "forRent" : true,
+        "forSell" : true,
+        "forVacation" : true,
+        "title" : "Sea View, Dream Home",
+        "address" : "123 Lorem Ipsum, 45 sit Atlanta",
+        "builtDate" : "30-06-2020",
+        "price" : "$ 121541.00",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum. Praesent condimentum turpis at neque faucibus feugiat. Aenean in dapibus diam. Fusce sit amet neque ornare, maximus sapien eget, feugiat turpis. Praesent quis urna a metus maximus condimentum quis in purus. Nullam molestie aliquet urna. Nunc a elit congue, gravida turpis sed, laoreet orci. \nUt pretium, nunc in bibendum iaculis, neque tellus efficitur lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante est, fermentum in laoreet nec, viverra eu mauris. In condimentum ac mauris a efficitur. Ut fringilla sed mauris eget convallis. Phasellus volutpat mattis tincidunt. Pellentesque non lacus felis. Donec ac sem eu libero consequat congue in vehicula justo. Nulla blandit id tortor non luctus. Donec in odio condimentum, condimentum nisi non, porta nisl. Donec sed consectetur erat, eu imperdiet urna. Praesent eu sapien orci.",
+        "size" : "70m²",
+        "garage" : 1,
+        "garageSize" : "8m²",
+        "bathrooms" : 1,
+        "bedrooms" : 2,
+        "features" : [
+            "air conditioning", "Laundry Room", "alarm", "Central Heating", "spa & massage", "pets allow", "window Covering"
+        ],
+        "floors" : [],
+        "images" : [
+            {
+                "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            },
+            {
+                "id" : "836c4e65-f35b-4939-ad21-664fa6b733b5",
+                "url" : "http://malikhassan.com/html/evernest/images/slide2.jpg"
+            }
+        ]        
+    },
+    {
+        "id" : "654adc07-8dd3-4e64-a12e-3b05ab40f62a",
+        "propId" : "AA9923",
+        "agencyId" : "ab037520-f666-4f9b-8b7f-9a0c7588f89b",
+        "propType" : "House",        
+        "forRent" : true,
+        "forSell" : true,
+        "forVacation" : true,
+        "title" : "The home you ever wanted",
+        "address" : "123 Lorem Ipsum, 45 sit Atlanta",
+        "builtDate" : "30-06-2020",
+        "price" : "$ 123991.00",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum. Praesent condimentum turpis at neque faucibus feugiat. Aenean in dapibus diam. Fusce sit amet neque ornare, maximus sapien eget, feugiat turpis. Praesent quis urna a metus maximus condimentum quis in purus. Nullam molestie aliquet urna. Nunc a elit congue, gravida turpis sed, laoreet orci. \nUt pretium, nunc in bibendum iaculis, neque tellus efficitur lectus, sit amet tincidunt justo nisi at risus. Vestibulum ante est, fermentum in laoreet nec, viverra eu mauris. In condimentum ac mauris a efficitur. Ut fringilla sed mauris eget convallis. Phasellus volutpat mattis tincidunt. Pellentesque non lacus felis. Donec ac sem eu libero consequat congue in vehicula justo. Nulla blandit id tortor non luctus. Donec in odio condimentum, condimentum nisi non, porta nisl. Donec sed consectetur erat, eu imperdiet urna. Praesent eu sapien orci.",
+        "size" : "90m²",
+        "garage" : 2,
+        "garageSize" : "12m²",
+        "bathrooms" : 3,
+        "bedrooms" : 3,
+        "features" : [
+            "air conditioning", "Laundry Room", "swiming pool", "air conditioning", "Central Heating", "gym", "alarm", "Central Heating", "spa & massage", "pets allow", "window Covering", "Internet", "car parking"
+        ],
+        "floors" : [
+            {
+                "id" : "b94d5afa-2cb2-4eb5-9685-b66ce8e18df2",
+                "title" : "Ground Floor 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/ground_floor.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            },
+            {
+                "id" : "b3145908-33e7-40a5-b553-5d535b7c62a1",
+                "title" : "First Floor 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/first_floor.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            },
+            {
+                "id" : "c4c3afe1-c595-4660-8557-e5e004ede3df",
+                "title" : "Garage 497 sq ft",
+                "image" : "http://malikhassan.com/html/evernest/images/garage_plan.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus ullamcorper libero tincidunt fermentum. Phasellus lobortis felis ac molestie dictum. Morbi at efficitur mauris. Aliquam lobortis massa non metus vehicula, at lacinia orci suscipit. Nulla porta urna id turpis aliquet elementum."
+            }
+        ],
+        "images" : [
+            {
+                "id" : "7b81b9fe-f43a-4e9e-a523-1d557a1d31b0",
+                "url" : "http://malikhassan.com/html/evernest/images/slide1.jpg"
+            },
+            {
+                "id" : "836c4e65-f35b-4939-ad21-664fa6b733b5",
+                "url" : "http://malikhassan.com/html/evernest/images/slide2.jpg"
+            },
+            {
+                "id" : "b3145908-33e7-40a5-b553-5d535b7c62a1",
+                "url" : "http://malikhassan.com/html/evernest/images/slide3.jpg"
+            },
+            {
+                "id" : "b94d5afa-2cb2-4eb5-9685-b66ce8e18df2",
+                "url" : "http://malikhassan.com/html/evernest/images/slide4.jpg"
+            },
+            {
+                "id" : "c4c3afe1-c595-4660-8557-e5e004ede3df",
+                "url" : "http://malikhassan.com/html/evernest/images/slide5.jpg"
+            }
+        ]        
+    }
+]

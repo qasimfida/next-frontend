@@ -12,31 +12,34 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const AgenciesCard = ({
-  detail,
-  agnecyName,
-  img,
-  mediaLeft = false,
-  hasSocialIcons,
-}) => {
+const AgenciesCard = (props) => {
+  const {
+    id,
+    name,
+    img,
+    mediaLeft = false,
+    hasSocialIcons,
+    instagram,
+    youtube,
+    twitter,
+    facebook,
+    subtitle,
+  } = props || {};
   return (
     <div className={`${styles.property_box} wow fadeInUp`}>
       <Row>
         <Col xs={12} md={mediaLeft ? 5 : 12}>
-          <div className={`${mediaLeft ? "md:mr-5" : ""} w-100 ${styles.media}`}>
-            <Image
-              src={img}
-              alt=""
-              className="img-fluid"
-              layout="fill"
-            />
+          <div
+            className={`${mediaLeft ? "md:mr-5" : ""} w-100 ${styles.media}`}
+          >
+            <Image src={img.src} alt="" className="img-fluid" layout="fill" />
           </div>
         </Col>
         <Col xs={12} md={mediaLeft ? 7 : 12}>
           <Row>
             <Col xs={12}>
               <h3>
-                <a href="#">{agnecyName}</a> <span>{detail}</span>
+                <a href={`corretor-imoveis/${id}`}>{name}</a> <span>{subtitle}</span>
               </h3>
               <Row className="m-0">
                 <Col xs={4} className={styles.property_info}>
@@ -48,7 +51,7 @@ const AgenciesCard = ({
                         </i>
                       </div>
                       <h5>Phone</h5>
-                    </a>{" "}
+                    </a>
                   </div>
                 </Col>
                 <Col xs={4} className={styles.property_info}>
@@ -60,7 +63,7 @@ const AgenciesCard = ({
                         </i>
                       </div>
                       <h5>Email</h5>
-                    </a>{" "}
+                    </a>
                   </div>
                 </Col>
                 <Col xs={4} className={styles.property_info}>
@@ -72,7 +75,7 @@ const AgenciesCard = ({
                         </i>
                       </div>
                       <h5>Address</h5>
-                    </a>{" "}
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -80,22 +83,22 @@ const AgenciesCard = ({
                 <div className={`${styles.social_icons} mt-4`}>
                   <ul>
                     <li className="ml-1">
-                      <a href="#">
+                      <a href={facebook} target="_blank">
                         <FontAwesomeIcon icon={faFacebookF} />
                       </a>
                     </li>
                     <li className="ml-1">
-                      <a href="#">
+                      <a href={twitter} target="_blank">
                         <FontAwesomeIcon icon={faTwitter} />
                       </a>
                     </li>
                     <li className="ml-1">
-                      <a href="#">
+                      <a href={instagram} target="_blank">
                         <FontAwesomeIcon icon={faInstagram} />
                       </a>
                     </li>
                     <li className="ml-1">
-                      <a href="#">
+                      <a href={youtube} target="_blank">
                         <FontAwesomeIcon icon={faYoutube} />
                       </a>
                     </li>
