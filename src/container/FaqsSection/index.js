@@ -17,7 +17,7 @@ function FaqsSection() {
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
         <Container>
-          <h1>404</h1>
+          <h1>Faqs</h1>
         </Container>
       </div>
       <div className={styles.innerContent}>

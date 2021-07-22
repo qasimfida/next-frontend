@@ -4,7 +4,6 @@ import data from "../api/data_articles.json";
 
 export default function Articles({data}) {
 
-
   return (
     <WithLayout>
       <ArticleListSection data={data} />
@@ -13,7 +12,7 @@ export default function Articles({data}) {
 }
 export async function getServerSideProps({ params }) {
   // const image = await getImages(); //pass the prop from the url
-  const articles = data.filter((article) => i.type==='news');
+  const articles = data.filter((article) => article.type==='news');
 
 
   return { props: { data: articles } };

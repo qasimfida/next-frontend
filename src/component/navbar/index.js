@@ -53,7 +53,6 @@ export const NavigationBar = () => {
       items: [
         { name: 'Agencies', link: '/corretor-imoveis' },
         { name: 'Agents', link: '/agents' },
-        { name: 'Agency Details', link: '/agencydetails' },
       ],
     },
     {
@@ -82,7 +81,6 @@ export const NavigationBar = () => {
       link: "#",
       items: [
         { name: "Article List", link: "/artigo" },
-        { name: "Article", link: "/artigo/1" },
       ],
     },
   ];

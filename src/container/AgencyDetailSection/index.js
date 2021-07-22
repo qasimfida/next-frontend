@@ -115,9 +115,8 @@ export const AgencyDetailSection = ({ data, properties }) => {
               <AgenciesCard
                 mediaLeft={true}
                 hasSocialIcons={true}
-                agnecyName={data.name}
                 img={listImg}
-                detail={data.subtitle}
+                {...data}
               />
               <h3 className={styles.desc_head}>Description</h3>
               <p>{data.description}</p>

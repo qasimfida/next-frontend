@@ -16,20 +16,20 @@ import Slider from "react-slick";
 
 export const PropertySection = ({ data }) => {
   const settings = {
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    dots: false,
   };
   const multiSlideSettings = {
+    dots: false,
     className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
+    infinite: false,
     slidesToShow: 2,
     speed: 500,
-    rows: 1,
   };
+
   return (
     <>
       <div className={`${styles.innerHeading} wow fadeInUp`}>
@@ -39,8 +39,8 @@ export const PropertySection = ({ data }) => {
       </div>
       <div className={styles.innerContent}>
         <Container>
-          <div className="row listing_wrap">
-            <div className="col-lg-4">
+          <Row className=" listing_wrap">
+            <Col xs={12} lg={4}>
               <Form>
                 <div className="sidebar_form card card-body  wow fadeInUp">
                   <div className={styles.input_group}>
@@ -278,7 +278,7 @@ export const PropertySection = ({ data }) => {
                 </div>
               </Form>
               <CategoryCard />
-            </div>
+            </Col>
             <Col sm={12} lg={8}>
               {/* <FeaturedSection /> */}
               <Slider
@@ -306,7 +306,8 @@ export const PropertySection = ({ data }) => {
               >
                 {data &&
                   data.images &&
-                  data.images.map((img, ind) => (
+                  data.images.map((img, ind) => {
+                    return (
                     <div key={ind}>
                       <Image
                         width="300"
@@ -315,7 +316,7 @@ export const PropertySection = ({ data }) => {
                         alt={img.name}
                       />
                     </div>
-                  ))}
+                  )})}
               </Slider>
               <div className="property_details_header_wrapper my-4">
                 <div className="property_details_header_inner d-flex justify-content-between align-items-start flex-wrap">
@@ -447,7 +448,7 @@ export const PropertySection = ({ data }) => {
                           </div>
                           <div className="property_content_details_values">
                             <span className={styles.value}>
-                              {data.porpType}
+                              {data.propType}
                             </span>
                           </div>
                         </div>
@@ -495,7 +496,7 @@ export const PropertySection = ({ data }) => {
                   {data.floors &&
                     data.floors.map((floor) => {
                       return (
-                        <Card>
+                        <Card key={floor.title} >
                           <Accordion.Toggle
                             as={Card.Header}
                             eventKey="0"
@@ -534,7 +535,7 @@ export const PropertySection = ({ data }) => {
                 </Accordion>
               </div>
             </Col>
-          </div>
+          </Row>
         </Container>
       </div>
     </>
