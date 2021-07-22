@@ -29,12 +29,12 @@
 @media (min-width: 1024px) {
   .left_media {
     position: absolute;
-    width: calc(50% - 45px);
+    width: calc(40% - 45px);
     height: calc(100% - 40px);
   }
   .card_body_right {
-    left: 50%;
-    width: 50%;
+    left: 40%;
+    width: 60%;
   }
 }
 
