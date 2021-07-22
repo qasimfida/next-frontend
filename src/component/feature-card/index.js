@@ -23,15 +23,15 @@ function FeaturedCard({
 }) {
   return (
     <Card className={`${styles.feature} wow fadeInUp`}>
-      <div className={`${mediaLeft ? "d-flex" : ""} ${styles.property_box}`}>
-        <div className={`h-100 ${mediaLeft ? "mr-4 w-50" : ""}  ${styles.propertyImg}`}>
+      <div className={`${mediaLeft ? "lg:d-flex" : ""} ${styles.property_box}`}>
+        <div className={` ${mediaLeft ? ` ${styles.left_media} mr-4 ` : styles.top_media}  ${styles.propertyImg}`}>
           <Card.Img
             className={` ${styles.propertyImgInner}`}
             variant={mediaLeft ? "left" : "top"}
             src={img}
           />
         </div>
-        <div className={`${mediaLeft ? 'w-50': ''}`} >
+        <div className={`  ${mediaLeft ? styles.card_body_right: styles.card_body_bottom}`} >
           <h3>{title}</h3>
           <div className={styles.property_location}>
             <i aria-hidden="true">
