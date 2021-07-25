@@ -198,3 +198,9 @@
   border-radius: 100%;
   cursor: pointer;
 }
+
+.thumbnail_slider img {
+  object-fit: cover !important;
+  object-position: center !important;
+  padding: 0 4px !important;
+}

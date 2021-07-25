@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Accordion, Card, Col, Container, Form, Row } from "react-bootstrap";
 import styles from "../../styles/container/PropertiesDetail.module.css";
 import CategoryCard from "../../component/category-card";
@@ -15,6 +15,15 @@ import {
 import Slider from "react-slick";
 
 export const PropertySection = ({ data }) => {
+  const [slide, setSlide] = useState(0);
+  const slider = useRef(Slider);
+
+  useEffect(() => {
+    if (slider.current) {
+      slider.current.slickGoTo(slide);
+    }
+  }, [slide]);
+
   const settings = {
     infinite: false,
     speed: 500,
@@ -25,8 +34,10 @@ export const PropertySection = ({ data }) => {
   const multiSlideSettings = {
     dots: false,
     className: "center",
-    infinite: false,
-    slidesToShow: 2,
+    infinite: true,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: '30px',
     speed: 500,
   };
 
@@ -282,6 +293,7 @@ export const PropertySection = ({ data }) => {
             <Col sm={12} lg={8}>
               {/* <FeaturedSection /> */}
               <Slider
+                ref={slider}
                 {...settings}
                 dots={false}
                 className="property_slick_slider_main"
@@ -302,21 +314,28 @@ export const PropertySection = ({ data }) => {
               <Slider
                 {...multiSlideSettings}
                 dots={false}
-                className="property_slick_slider_main"
+                className={` ${styles.thumbnail_slider} property_slick_slider_main slider_thumbnail`}
               >
                 {data &&
                   data.images &&
                   data.images.map((img, ind) => {
                     return (
-                    <div key={ind}>
-                      <Image
-                        width="300"
-                        height="110"
-                        src={img.url}
-                        alt={img.name}
-                      />
-                    </div>
-                  )})}
+                      <div
+                        key={ind}
+                        onClick={() => {
+                          setSlide(ind);
+                        }}
+                      >
+                        <Image
+                          className={styles.thumbnail_image}
+                          width="300"
+                          height="110"
+                          src={img.url}
+                          alt={img.name}
+                        />
+                      </div>
+                    );
+                  })}
               </Slider>
               <div className="property_details_header_wrapper my-4">
                 <div className="property_details_header_inner d-flex justify-content-between align-items-start flex-wrap">
@@ -476,7 +495,7 @@ export const PropertySection = ({ data }) => {
                 <Row>
                   {data.features &&
                     data.features.map((feature) => {
-                      <Col sm={12} md={4} key={feature}>
+                     return <Col sm={12} md={4} key={feature}>
                         <div className={styles.property_details_features_item}>
                           <span className={`${styles.icon_outer} mr-2`}>
                             <FontAwesomeIcon
@@ -496,7 +515,7 @@ export const PropertySection = ({ data }) => {
                   {data.floors &&
                     data.floors.map((floor) => {
                       return (
-                        <Card key={floor.title} >
+                        <Card key={floor.title}>
                           <Accordion.Toggle
                             as={Card.Header}
                             eventKey="0"
