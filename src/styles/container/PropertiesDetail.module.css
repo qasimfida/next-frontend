@@ -202,5 +202,6 @@
 .thumbnail_slider img {
   object-fit: cover !important;
   object-position: center !important;
-  padding: 0 4px !important;
+  padding: 0 3px !important;
+  height: 100px !important;
 }
